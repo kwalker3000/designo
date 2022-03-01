@@ -5,6 +5,10 @@ html, body {
     font-family: 'Jost', sans-serif;
 }
 
+body {
+    padding: 0 1.5em;
+}
+
 header {
     margin: 2em 0;
 }
@@ -17,18 +21,21 @@ header {
     max-width: 1024px;
 }
 
-img {
-    height: 2em;
+.logo {
+    height: 1.5em;
+    margin-top: .6em;
+}
+
+.nav, .more-btn {
+    text-transform: uppercase;
 }
 
 .nav {
     color: #333136;
     display: flex;
-    font-size: 1.14rem;
+    font-size: .875rem;
     letter-spacing: 2px;
     list-style: none;
-    cursor: pointer;
-    text-transform: uppercase;
 }
 
 li {
@@ -37,9 +44,68 @@ li {
 
 a {
     color: inherit;
+    cursor: pointer;
     text-decoration: none;   
 }
 
 a:hover, a:focus {
     text-decoration: underline;
+}
+
+.hero-container {
+    background-color: #E7816B;
+    background-image: url(./assets/desktop/bg-pattern-hero-home.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.hero-content {
+    align-items: center;
+    display: flex;
+    
+}
+
+.hero-phone {
+    object-fit: none;
+    object-position: 39% 0%;
+    width: 100%;
+
+    /* positioning adjustment */
+
+    /* object-position: 40% 0%;
+    width: 122%; */
+}
+
+.hero-text {
+    color: #fff;
+    /* margin: 0 3em; */
+    order: -1;
+    position: relative;
+    left: 4em;
+    bottom: 1em;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+.hero-text p {
+    line-height: 1.625rem;
+    margin-bottom: 2em;
+    width: 80%;
+}
+
+.more-btn {
+    border: none;
+    border-radius: 8px;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
+    padding: 1em 1.6em;
+    
 }
