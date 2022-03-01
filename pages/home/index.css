@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+header {
+    margin: 2em 0;
+}
+
+.brand-logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+img {
+    height: 2em;
+}
+
+.nav {
+    color: #333136;
+    display: flex;
+    font-size: 1.14rem;
+    letter-spacing: 2px;
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+li {
+    margin-left: 1.5em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;   
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
