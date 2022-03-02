@@ -117,6 +117,11 @@ html, body {
     width: 100%;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 /* ------- Header ---------- */
 
 header {
@@ -248,6 +253,7 @@ h1 {
 
 .graphic-design {
     background-image: url("./assets/mobile/image-graphic-design.jpg");
+    margin-bottom: 6em;
 }
 
 .project-navigation h2 {
@@ -260,10 +266,53 @@ h1 {
 .project-navigation p {
     font-size: .94rem;
     font-weight: 500;
-    letter-spacing: .31rem
+    letter-spacing: .31rem;
 }
 
 .arrow {
     position: relative;
-    left: 1em
+    left: 1em;
+}
+
+/* --------- Illustrations Section --------- */
+
+.illustration-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.illustration {
+    background-repeat: no-repeat;
+    margin-bottom: 2em;
+}
+
+.ill-one--bg {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle.svg");
+}
+
+.ill-two--bg {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-up.svg");
+}
+
+.ill-three--bg {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-down.svg");
+    margin-bottom: 1em;
+}
+
+.illustration-text {
+    color: #333136;
+    text-align: center;
+}
+
+.illustration-text h2 {
+    font-size: 1.25rem;
+    letter-spacing: .31rem;
+    margin-bottom: 1.5em;
+}
+
+.illustration-text p {
+    margin: 0 auto;
+    margin-bottom: 4em;
+    width: 80%;
 }
