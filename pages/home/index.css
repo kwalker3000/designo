@@ -160,11 +160,14 @@ nav {
     
 }
 
-/*  -------- Main ------------ */
+/*  -------- Hero ------------ */
 
 .hero-container {
     background-color: #E7816B;
-    
+    background-image: url(./assets/desktop/bg-pattern-hero-home.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-bottom: 6em;
 }
 
 .hero-content {
@@ -173,7 +176,6 @@ nav {
     background-position-y: -486%;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
     height: 850px;
 }
 
@@ -191,8 +193,8 @@ h1 {
 }
 
 .hero-text p {
-    line-height: 1.56rem;
     font-size: .94rem;
+    line-height: 1.56rem;
     margin-bottom: 2em;
 }
 
@@ -210,4 +212,58 @@ h1 {
 }
 
 
+/* ------ Project Navigation Section --------*/
 
+.project-navigation {
+    display: grid;
+    grid-gap: 1.5em;
+}
+
+.project-navigation > div {
+    color: #fff;
+    height: 250px;
+    text-transform: uppercase;
+}
+
+.web-design, .app-design, .graphic-design {
+    align-items: center;
+    background-blend-mode: multiply;
+    background-color: hsla(0, 10%, 10%, .75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1.4em;
+}
+
+.web-design {
+    background-image: url("./assets/mobile/image-web-design.jpg");
+}
+
+.app-design {
+    background-image: url("./assets/mobile/image-app-design.jpg");
+}
+
+.graphic-design {
+    background-image: url("./assets/mobile/image-graphic-design.jpg");
+}
+
+.project-navigation h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: .09rem;
+    margin-bottom: 0;
+}
+
+.project-navigation p {
+    font-size: .94rem;
+    font-weight: 500;
+    letter-spacing: .31rem
+}
+
+.arrow {
+    position: relative;
+    left: 1em
+}
