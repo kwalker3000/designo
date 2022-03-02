@@ -9,32 +9,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
 
   <link href="./index.css" rel="stylesheet">
+  <script src="./index.js" async></script>
   
   <title>Designo Agency</title>
 </head>
 <body>
 
   <header>
-    <div class="brand-logo">
-      <a href="#"><img class="logo" src="../../shared-assets/desktop/logo-dark.png"></a>
+    <!-- <div class="brand-logo"> -->
+      <img class="logo" src="../../shared-assets/desktop/logo-dark.png">
+      <!-- <div class="hamburger">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div> -->
 
-      <ul class="nav">
-        <li><a href="#">our company</a></li>
-        <li><a href="#">locations</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
+        <button class="menu-toggle" id="menu-toggle" aria-label="menu toggle">
+          <img class="closed-menu-icon" src="../../shared-assets/mobile/icon-hamburger.svg">
+          <img class="opened-menu-icon" src="../../shared-assets/mobile/icon-close.svg">
+        </button>
+        <!-- <input type="checkbox" id="menu" class="menu-checkbox" checked="false"/> -->
 
+        <nav>
+          <ul class="menu">
+            <li><a href="#">our company</a></li>
+            <li><a href="#">locations</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+
+      <!-- </div> -->
     </div>
   </header>
 
   <main>
 
     <div class="hero-container">
-      <!-- <img class="bg-hero-pattern" src="./assets/desktop/bg-pattern-hero-home.svg" alt=""> -->
-
       <div class="hero-content">
-        <img class="hero-phone" src="./assets/desktop/image-hero-phone.png" alt="a cellphone showing a vase in the background and the words, frame, displaying across the screen">
-
         <div class="hero-text">
           <h1>Award-winning custom designs and digital branding solutions</h1>
           <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>

@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -73,16 +73,10 @@ a:hover, a:focus {
     object-fit: none;
     object-position: 39% 0%;
     width: 100%;
-
-    /* positioning adjustment */
-
-    /* object-position: 40% 0%;
-    width: 122%; */
 }
 
 .hero-text {
     color: #fff;
-    /* margin: 0 3em; */
     order: -1;
     position: relative;
     left: 4em;
@@ -108,4 +102,112 @@ h1 {
     letter-spacing: 1px;
     padding: 1em 1.6em;
     
+} */
+
+/* ------Mobile-------------- */
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
 }
+
+html, body {
+    width: 100%;
+}
+
+/* ------- Header ---------- */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo, .menu-toggle {
+    margin: 1.5em 1em;
+}
+
+.logo {
+    width: 50%;
+}
+
+.menu-toggle > img{
+    width: 80%;
+}
+
+nav {
+    width: 100%;
+}
+
+.menu-toggle {
+    background-color: #fff;
+    border: none;
+}
+
+.opened-menu-icon {
+    display: none
+}
+
+.menu {
+    background-color: red;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*  -------- Main ------------ */
+
+.hero-container {
+    background-color: #E7816B;
+    
+}
+
+.hero-content {
+    background-image: url(./assets/desktop/image-hero-phone.png);
+    background-position-x: center;
+    background-position-y: -486%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+}
+
+.hero-text {
+    color: #fff;
+    text-align: center;
+    margin: 1em;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    margin-top: 1.3em;
+}
+
+.hero-text p {
+    line-height: 1.56rem;
+    font-size: .94rem;
+    margin-bottom: 2em;
+}
+
+.hero-text .more-btn {
+    border: none;
+    border-radius: 8px;
+    color: #333136;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: .94rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 1em 1.8em;
+    text-transform: uppercase;
+}
+
+
+
