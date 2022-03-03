@@ -134,6 +134,10 @@ a {
     text-decoration: none;   
 }
 
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
 h2 {
     text-transform: uppercase;
     font-weight: 500;
@@ -179,8 +183,7 @@ nav {
     display: none;
     list-style: none;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
 
 /*  -------- Hero ------------ */
@@ -237,6 +240,12 @@ nav {
     text-transform: uppercase;
 }
 
+.more-btn:hover, 
+.more-btn:focus {
+    background-color: #FFAD9B;
+    color: #fff;
+}
+
 
 /* ------ Project Navigation Section --------*/
 
@@ -247,14 +256,24 @@ nav {
 
 .project-navigation > div {
     color: #fff;
+    cursor: pointer;
     height: 250px;
     text-transform: uppercase;
 }
 
-.web-design, .app-design, .graphic-design {
+.project-navigation > div:hover,
+.project-navigation > div:focus {
+    background-blend-mode: soft-light;
+    background-color: #B15A47;
+    opacity: .75;
+}
+
+.web-design,
+.app-design,
+.graphic-design {
     align-items: center;
-    background-blend-mode: multiply;
-    background-color: hsla(0, 10%, 10%, .75);
+    background-blend-mode: overlay;
+    background-color: hsla(0, 0%, 10%, .85);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
@@ -347,6 +366,8 @@ nav {
 
 .landing-contact--wrapper {
     background-color: #E7816B;
+    background-image: url("../../shared-assets/desktop/bg-pattern-call-to-action.svg");
+    background-position: -14em -3em;
     border-radius: 15px;
     margin: 2em 1.4em -12em;
     padding: 4.5em 0;
@@ -397,4 +418,13 @@ footer li {
     display: flex;
     justify-content: space-around;
     margin-top: 2.5em;
+}
+
+svg {
+    fill: #E7816B;
+}
+
+svg:hover,
+svg:focus {
+    fill: #FFAD9B
 }
