@@ -338,12 +338,18 @@ h1 {
 /* --------- Footer Section -------- */
 
 footer {
+    align-items: center;
     background-color: #1D1C1E;
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 10em 0 2.5em;
     text-align: center;
+}
+
+.lt-logo {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    padding: 4em 4em 3em;
 }
 
 footer ul {
@@ -351,10 +357,21 @@ footer ul {
     letter-spacing: .125rem;
 }
 
-.contact {
+footer li {
+    margin-bottom: 2em;
+}
+
+.contact p {
+    line-height: 1.625rem;
     opacity: .5;
 }
 
 .contact span {
     font-weight: 700;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5em;
 }
