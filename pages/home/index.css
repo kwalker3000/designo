@@ -338,6 +338,9 @@ svg:focus {
         background-color: white;
         z-index: 1000;   
     }
+    .non-mobile {
+        display: none;
+    }
 
     .mobile-nav-toggle {
         background-color: white;
@@ -412,6 +415,14 @@ svg:focus {
 @media (min-width: 740px) {
     .mobile-nav-toggle {
         display: none;
+    }
+
+    .non-mobile {
+        display: block;
+    }
+
+    .mobile {
+        display: none
     }
     
 }
