@@ -9,6 +9,13 @@ html, body {
     width: 100%;
 }
 
+@media (min-width: 740px) {
+
+    body {
+        padding: 0 2em;
+    }
+}
+
 nav {
     text-transform: uppercase;
 }
@@ -51,8 +58,9 @@ header {
 @media (min-width: 740px) {
     .primary-navigation {
         display: flex;
-        position: relative;
-        inset: -3em 1em 1em 22em;
+        align-items: center;
+        /* position: relative;
+        inset: -3em 1em 1em 22em; */
     }
 
     .primary-navigation a {
@@ -60,7 +68,7 @@ header {
     }
 
     .logo {
-        margin-top: 2.5em;
+        margin: 2.5em 0 2.5em 0;
     }
 }
 
@@ -128,6 +136,10 @@ header {
 }
 
 @media (min-width: 740px) {
+
+    .hero-container {
+        border-radius: 15px;
+    }
 
     .hero-text {
         margin: 0 3em;
@@ -418,7 +430,7 @@ svg:focus {
     }
 
     .non-mobile {
-        display: block;
+        display: flex;
     }
 
     .mobile {
