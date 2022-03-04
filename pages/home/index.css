@@ -117,6 +117,10 @@ html, body {
     width: 100%;
 }
 
+body {
+    /* overflow: hidden; */
+}
+
 nav {
     text-transform: uppercase;
 }
@@ -169,21 +173,24 @@ nav {
     /* width: 100%; */
 }
 
-.menu-toggle {
-    background-color: #fff;
-    border: none;
-}
-
-.opened-menu-icon {
-    display: none
-}
-
 .menu {
-    background-color: red;
-    display: none;
     list-style: none;
     margin: 0;
     padding: 0;  
+}
+
+.menu {
+    background-color: black;
+    position: absolute;
+    height: 20%;
+    inset: 0 0 0 0;
+    z-index: 0
+}
+
+header {
+    position: absolute;
+    background-color: white;
+    z-index: 1000;   
 }
 
 /*  -------- Hero ------------ */
@@ -194,6 +201,11 @@ nav {
     background-position: left;
     background-repeat: no-repeat;
     margin-bottom: 6em;
+
+    z-index: -999;
+    /* menu transition  */
+    position: relative;
+    inset: 4.5em 0 0 0;
 }
 
 .hero-content {
@@ -244,6 +256,10 @@ nav {
 .more-btn:focus {
     background-color: #FFAD9B;
     color: #fff;
+}
+
+@media (min-width: 540px) {
+    
 }
 
 
@@ -427,4 +443,52 @@ svg {
 svg:hover,
 svg:focus {
     fill: #FFAD9B
+}
+
+.mobile-nav-toggle {
+    background-color: white;
+    background-image: url("../../shared-assets/mobile/icon-hamburger.svg");
+    background-repeat: repeat;
+    background-size: cover;
+    border: none;
+    display: block;
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    
+    
+    
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("../../shared-assets/mobile/icon-close.svg");
+}
+
+.primary-navigation {
+    transform: translateY(-100%)
+    
+}
+
+.primary-navigation[data-visible="true"] {
+    transform: translateY(4.5em);
+    transition: transform 350ms ease-out
+}
+
+.primary-navigation li {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .125rem;
+    margin: 1em 0 0 1em;
+    text-transform: uppercase;
+}
+
+.overlay[data-visible="true"] {
+    background-color: black;
+    height: 200vh;
+    position: absolute;
+    opacity: .7;
+    z-index: -1;
+    width: 100%;
 }

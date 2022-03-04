@@ -16,30 +16,30 @@
 <body>
 
   <header>
-    <!-- <div class="brand-logo"> -->
+
       <img class="logo" src="../../shared-assets/desktop/logo-dark.png" alt="company-logo">
-      <!-- <div class="hamburger">
-        <div class="bar-1"></div>
-        <div class="bar-2"></div>
-        <div class="bar-3"></div> -->
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="menu toggle">
-          <img class="closed-menu-icon" src="../../shared-assets/mobile/icon-hamburger.svg">
-          <img class="opened-menu-icon" src="../../shared-assets/mobile/icon-close.svg">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only"></span>
         </button>
-        <!-- <input type="checkbox" id="menu" class="menu-checkbox" checked="false"/> -->
-
-        <nav>
-          <ul class="menu">
-            <li><a href="#">our company</a></li>
-            <li><a href="#">locations</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-
-      <!-- </div> -->
-    </div>
+  
   </header>
+
+  <nav>
+    <ul id="primary-navigation" class="menu primary-navigation" data-visible="false">
+      <li>
+        <a href="#">our company</a>
+      </li>
+      <li>
+        <a href="#">locations</a>
+      </li>
+      <li>
+        <a href="#">contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="overlay" data-visible="false"></div>
 
   <main>
 
@@ -62,12 +62,10 @@
         <p>view projects<span class="arrow"><img src="../../shared-assets/desktop/icon-right-arrow.svg" alt=""></span></p>
       </div>
 
-      <!-- <div class="overlay"> -->
         <div tabindex="0" class="app-design">
           <h2>app design</h2>
           <p>view projects<span class="arrow"><img src="../../shared-assets/desktop/icon-right-arrow.svg" alt=""></span></p>
         </div>
-      <!-- </div> -->
 
       <div tabindex="0" class="graphic-design">
         <h2>graphic design</h2>

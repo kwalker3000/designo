@@ -1,21 +1,21 @@
+const primaryNav = document.querySelector('.primary-navigation')
+const navToggle = document.querySelector('.mobile-nav-toggle')
+const overlay = document.querySelector('.overlay')
 
+navToggle.addEventListener('click', () => {
+    const isVisible = primaryNav.getAttribute('data-visible') === 'true'
 
-function toggleOn() {
-    closedMenuIcon.style.display = 'none'
-    openedMenuIcon.style.display = 'block'
-    menu.style.display = 'block'
+    if (!isVisible) {
+        console.log('if')
+        primaryNav.setAttribute('data-visible', true)
+        navToggle.setAttribute('aria-expanded', true)
+        overlay.setAttribute('data-visible', true)
+    }
+    else {
+        console.log('else')
+        primaryNav.setAttribute('data-visible', false)
+        navToggle.setAttribute('aria-expanded', false)
+        overlay.setAttribute('data-visible', false)
+    }
 
-}
-
-function toggleOff() {
-    menu.style.display = 'none'
-    openedMenuIcon.style.display = 'none'
-    closedMenuIcon.style.display = 'block'
-}
-
-const menu = document.querySelector('.menu')
-const closedMenuIcon = document.querySelector('.closed-menu-icon')
-const openedMenuIcon = document.querySelector('.opened-menu-icon')
-
-closedMenuIcon.addEventListener('click', toggleOn)
-openedMenuIcon.addEventListener('click', toggleOff)
+})
