@@ -142,7 +142,7 @@ header {
     }
 
     .hero-text {
-        margin: 0 3em;
+        margin: 0 10%;
     }
     
     .hero-text h1 {
@@ -225,6 +225,32 @@ header {
     left: 1em;
 }
 
+@media (min-width: 740px) {
+
+    .project-navigation h2 {
+        font-size: 2.5rem;
+        letter-spacing: .125rem;
+    }
+
+    .web-design,
+    .app-design,
+    .graphic-design {
+        margin: 0;
+    }
+
+    .web-design {
+        background-image: url("./assets/tablet/image-web-design.jpg");
+    }
+    
+    .app-design {
+        background-image: url("./assets/tablet/image-app-design.jpg");
+    }
+    
+    .graphic-design {
+        background-image: url("./assets/tablet/image-graphic-design.jpg");
+    }
+}
+
 /* --------- Illustrations Section --------- */
 
 .illustration-wrapper {
@@ -233,9 +259,15 @@ header {
     flex-direction: column;
 }
 
+.illustration-component-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .illustration {
     background-repeat: no-repeat;
     margin-bottom: 2em;
+    align-self: center;
 }
 
 .ill-one--bg {
@@ -263,9 +295,32 @@ header {
 }
 
 .illustration-text p {
+    line-height: 1.625rem;
     margin: 0 auto;
     margin-bottom: 4em;
     width: 80%;
+}
+
+@media (min-width: 740px) {
+
+    .illustration-wrapper {
+        margin-top: 6em;
+    }
+
+    .illustration-component-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .illustration-text {
+        text-align: left;
+    }
+
+    .illustration-text h2 {
+        margin-bottom: 1em;
+        margin-left: 10%;
+    }
+
 }
 
 /*  ------- Landing Contact Floater -------- */
