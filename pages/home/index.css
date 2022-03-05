@@ -351,14 +351,31 @@ header {
     .landing-contact--wrapper {
         margin: 2em 0 -5em;
     }
+
+    .landing-contact--text {
+        margin: 0 10%;
+    }
+
+    .landing-contact--text h2 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
 }
 
 /* --------- Footer Section -------- */
 
 footer {
-    align-items: center;
+    /* align-items: center; */
     background-color: #1D1C1E;
     color: #fff;
+    /* display: flex;
+    flex-direction: column;
+    padding: 10em 0 2.5em;
+    text-align: center; */
+}
+
+.footer-wrapper {
+    align-items: center;
     display: flex;
     flex-direction: column;
     padding: 10em 0 2.5em;
@@ -368,6 +385,7 @@ footer {
 .lt-logo {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     padding: 4em 4em 2em;
+    width: 170px;
 }
 
 footer ul {
@@ -377,6 +395,11 @@ footer ul {
 
 footer li {
     margin-bottom: 2em;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact p {
@@ -401,6 +424,66 @@ svg {
 svg:hover,
 svg:focus {
     fill: #FFAD9B
+}
+
+@media (min-width: 740px) {
+
+    .footer-wrapper {
+        padding-top: 7em;
+        text-align: left;
+    }
+
+    .btm-nav-container {
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .lt-logo {
+        padding: 0;
+        border: none;
+    }
+
+    footer nav {
+        display: flex;
+        align-items: center;
+    }
+
+    footer nav a {
+        margin-left: 2.5em;
+    }
+
+    footer ul {
+        display: flex;
+    }
+
+    footer li {
+        margin: 0;
+    }
+
+    .contact-container {
+        align-items: end;
+        flex-direction: initial;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contact p {
+        margin-top: 2em;
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
+    .social {
+        margin-bottom: .5em;
+    }
+
+    .social > a {
+        margin-left: 1em;
+    }
 }
 
 
