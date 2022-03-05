@@ -278,6 +278,33 @@ header {
     }
 }
 
+@media (min-width: 1140px) {
+
+    .project-navigation {
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: 640px;
+    }
+
+    .project-navigation > div {
+        height: auto;
+    }
+
+    .web-design {
+        grid-row: span 2;
+    }
+
+    .web-design {
+        background-image: url("./assets/desktop/image-web-design-large.jpg");
+    }
+    
+    .app-design {
+        background-image: url("./assets/desktop/image-app-design.jpg");
+    }
+    
+    .graphic-design {
+        background-image: url("./assets/desktop/image-graphic-design.jpg");
+    }
+}
 /* --------- Illustrations Section --------- */
 
 .illustration-wrapper {
