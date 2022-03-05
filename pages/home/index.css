@@ -1,12 +1,16 @@
 html, body {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Jost', sans-serif;
 }
 
 html, body {
     width: 100%;
+}
+
+body {
+    max-width: 1250px;
 }
 
 @media (min-width: 740px) {
@@ -163,7 +167,8 @@ header {
 @media (min-width: 1140px) {
 
     .hero-container {
-        margin-bottom: 8em;
+        margin-bottom: 7em;
+        background-position: right;
     }
 
     .hero-content {
@@ -384,6 +389,7 @@ header {
 @media (min-width: 1140px) {
 
     .illustration-wrapper {
+        align-items: baseline;
         flex-direction: row;
         margin: 10em 0 6em;
     }
@@ -392,8 +398,16 @@ header {
         flex-direction: column;
     }
 
+    .ill-three--bg {
+        margin-bottom: 2em;
+    }
+
     .illustration-text {
         text-align: center;
+    }
+
+    .illustration-text p {
+        width: 91%;
     }
 }
 
@@ -435,16 +449,34 @@ header {
     }
 }
 
+@media (min-width: 1140px) {
+
+    .landing-contact--wrapper,
+    .landing-contact--text {
+        text-align: left;
+        background-position: -47em -8em;
+    }
+
+    .landing-contact--text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .landing-contact--text h2 {
+        margin: 0;
+    }
+
+    .inside-text {
+        width: 52%;
+    }
+}
+
 /* --------- Footer Section -------- */
 
 footer {
-    /* align-items: center; */
     background-color: #1D1C1E;
     color: #fff;
-    /* display: flex;
-    flex-direction: column;
-    padding: 10em 0 2.5em;
-    text-align: center; */
 }
 
 .footer-wrapper {
@@ -658,3 +690,26 @@ svg:focus {
     
 }
 
+/*  ---- Background Flair ----- */
+
+/* Not working */
+@media (min-width: 1140px) {
+    /* .leaf {
+        background-image: url("../../shared-assets/desktop/bg-pattern-leaf.svg");
+        position: absolute;
+        width: 1005px;
+        height: 595px;
+        z-index: -1;
+    }
+
+    .leaf-top {
+        top: 40%;
+        left: -10%;
+    }
+
+    .leaf-bottom {
+        top: 162%;
+        left: 18%;
+        
+    } */
+}
