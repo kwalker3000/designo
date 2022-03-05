@@ -162,6 +162,10 @@ header {
 
 @media (min-width: 1140px) {
 
+    .hero-container {
+        margin-bottom: 8em;
+    }
+
     .hero-content {
         background-position-x: 123%;
         background-position-y: 10%;
@@ -375,6 +379,22 @@ header {
         margin-left: 10%;
     }
 
+}
+
+@media (min-width: 1140px) {
+
+    .illustration-wrapper {
+        flex-direction: row;
+        margin: 10em 0 6em;
+    }
+
+    .illustration-component-container {
+        flex-direction: column;
+    }
+
+    .illustration-text {
+        text-align: center;
+    }
 }
 
 /*  ------- Landing Contact Floater -------- */
