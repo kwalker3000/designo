@@ -65,6 +65,10 @@ header {
     .primary-navigation {
         display: flex;
         align-items: center;
+
+
+
+
         /* position: relative;
         inset: -3em 1em 1em 22em; */
     }
@@ -624,8 +628,8 @@ svg:focus {
         background-image: url("../../shared-assets/mobile/icon-close.svg");
     }
     
-    .primary-navigation {
-        transform: translateY(-100%)
+    .mobile-primary-navigation {
+        transform: translateY(-100%);
         
     }
 
@@ -643,12 +647,12 @@ svg:focus {
         z-index: 0
     }
     
-    .primary-navigation[data-visible="true"] {
+    .mobile-primary-navigation[data-visible="true"] {
         transform: translateY(4.5em);
         transition: transform 350ms ease-out
     }
     
-    .primary-navigation li {
+    .mobile-primary-navigation li {
         color: white;
         font-size: 1.5rem;
         letter-spacing: .125rem;
