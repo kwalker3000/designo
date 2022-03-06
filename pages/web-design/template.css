@@ -1,0 +1,305 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Jost', sans-serif; 
+}
+
+body {
+    max-width: 1250px;
+}
+
+.page-wrapper {
+    width: 90%;
+    max-width: 1060px;
+    margin: auto;
+
+    position: absolute;
+    inset: 0;
+}
+
+@media (min-width: 740px) {
+
+    li {
+        margin-left: 2em;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+li {
+    font-size: .875rem;
+    letter-spacing: .143em;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* ------- Header ---------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    margin: 1.5em 0;
+    /* margin: 1.5em 1.5em; */
+    max-width: 200px;
+}
+
+@media (min-width: 740px) {
+    .primary-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .primary-navigation li {
+        margin-left: 2em;
+    }
+
+    .logo {
+        margin: 2.5em 0 2.5em 0;
+    }
+
+    .mobile-nav-btn,
+    .mobile {
+        display: none;
+    }
+
+    .non-mobile {
+        display: flex;
+    }
+}
+
+/*  --------- Footer ------------ */
+
+footer,
+.navigation-wrapper {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+    inset: 100% 0 0 0;
+    width: 100%;
+    z-index: 1;
+
+
+    background-color: #1D1C1E;
+}
+
+/* .logo-container {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    margin-bottom: 1.7em;
+} */
+
+footer .logo {
+    /* border-bottom: 1px solid rgba(255, 255, 255, .1); */
+    margin: 0;
+    padding: 1.5em 0;
+}
+
+footer hr {
+    border: .5px solid rgba(255, 255, 255, .1);
+    margin: 0 0 24px;
+}
+
+
+footer li {
+    color: #FFF;
+    margin-top: 1.5em;
+}
+
+footer li:nth-child(3) {
+    margin-bottom: .8em;
+}
+
+.contact {
+    line-height: 1.625em;
+    color: rgba(255, 255, 255, .5);
+}
+
+.contact {
+    margin-bottom: 2em;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+svg {
+    fill: #E7816B;
+    margin-left: .5em;
+}
+
+svg:hover,
+svg:focus,
+.social a {
+    fill: #FFAD9B;
+    text-decoration: none;
+}
+
+.footer-bkg {
+    background-color: #1D1C1E;
+    height: 815px;
+    position: absolute;
+    inset: 75% 0 0 0;
+}
+
+@media (min-width: 740px) {
+    
+    .footer-bkg {
+        height: 415px;
+        inset: 96% 0 0 0;
+    }
+
+    .navigation-wrapper,
+    .contact-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation-wrapper {
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        align-items: center;
+        padding-bottom: .5rem;
+        
+    }
+
+    .navigation-wrapper ul {
+        display: flex;
+    }
+
+    footer li {
+        margin: 8px 0 0 2em; 
+    }
+
+    footer hr {
+        display: none;
+    }
+
+    .contact-wrapper {
+        width: 100%;
+        text-align: left;
+        padding-top: 1%;
+    }
+
+    .contact-wrapper div:nth-child(1) {
+        flex-grow: 2;
+    }
+
+    .contact-wrapper div:nth-child(2) {
+        flex-grow: 3;
+    }
+
+    .social {
+        align-self: end;
+        margin-bottom: 1.8em;
+    }
+}
+
+
+/* ------- Responsive Navbar --------- */
+
+@media (max-width: 739px) {
+
+    header {
+        background-color: white;
+        position: absolute;
+        z-index: 1000;   
+    }
+
+    .false-header {
+        width: 100%;
+        height: 6.8%;
+        background-color: white;
+        position: absolute;
+        z-index: 2;
+    }
+    .non-mobile {
+        display: none;
+    }
+
+    .mobile-nav-btn {
+        background: rgb(255, 255, 255) url("../../shared-assets/mobile/icon-hamburger.svg");
+        background-size: cover;
+        border: none;
+        height: 1.5em;
+        width: 1.5em;
+
+        position: absolute;
+        top: 2em;
+        right: 0;
+        /* right: 10%; */
+        /* right: 2em;     */
+    }
+    
+    .mobile-nav-btn[aria-expanded="true"] {
+        background-image: url("../../shared-assets/mobile/icon-close.svg");
+    }
+    
+    .mobile-primary-navigation {
+        background-color: black;
+        height: 19%;
+        transform: translateY(-100%);
+
+        position: fixed;
+        inset: 0 0 0 0;
+        z-index: 0;
+        
+    }
+    
+    .mobile-primary-navigation[data-visible="true"] {
+        transform: translateY(4.5em);
+        transition: transform 350ms ease-out;
+    }
+    
+    .mobile-primary-navigation li {
+        color: white;
+        font-size: 1.5rem;
+        letter-spacing: .083em;
+        margin: 1em 0 0 5%;
+    }
+
+    .mobile-primary-navigation li:nth-child(1) {
+        margin-top: 1.2em;
+    }
+    
+    .overlay[data-visible="true"] {
+        background-color: rgba(0, 0, 0, .7);
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    /*  not in html */
+    .hero-container {
+        position: relative;
+        inset: 4.5em 0 0 0;
+    }
+
+    .hero-container[data-visible="false"] {
+        z-index: -999;
+    }
+    /* ---------- */
+}
