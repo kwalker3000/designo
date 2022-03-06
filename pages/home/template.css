@@ -201,6 +201,7 @@ svg:focus,
     .contact-wrapper {
         width: 100%;
         text-align: left;
+        padding-top: 1%;
     }
 
     .contact-wrapper div:nth-child(1) {
