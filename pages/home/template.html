@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./template.css" rel="stylesheet" />
+    <script src="./index.js" async></script>
+
+    <title></title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <img
+          class="logo"
+          src="../../shared-assets/desktop/logo-dark.png"
+          alt="company-logo"
+        />
+
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only"></span>
+        </button>
+
+        <nav class="non-mobile">
+          <ul
+            id="primary-navigation"
+            class="menu primary-navigation"
+            data-visible="false"
+          >
+            <li>
+              <a href="#">our company</a>
+            </li>
+            <li>
+              <a href="#">locations</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <nav class="mobile">
+        <ul
+          id="primary-navigation"
+          class="menu mobile-primary-navigation"
+          data-visible="false"
+        >
+          <li>
+            <a href="#">our company</a>
+          </li>
+          <li>
+            <a href="#">locations</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="overlay" data-visible="false"></div>
+
+      <main></main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

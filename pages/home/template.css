@@ -1,0 +1,142 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Jost', sans-serif; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+/* ------- Header ---------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    margin: 1.5em 1.5em;
+    max-width: 200px;
+}
+
+@media (min-width: 740px) {
+    .primary-navigation {
+        display: flex;
+        align-items: center;
+
+
+
+
+        /* position: relative;
+        inset: -3em 1em 1em 22em; */
+    }
+
+    .primary-navigation a {
+        margin-left: 2em;
+        font-size: .875rem;
+        letter-spacing: .143em;
+    }
+
+    .logo {
+        margin: 2.5em 0 2.5em 0;
+    }
+
+    .mobile-nav-toggle {
+        display: none;
+    }
+
+    .non-mobile {
+        display: flex;
+    }
+
+    .mobile {
+        display: none
+    }
+}
+
+/* ------- Responsive Navbar --------- */
+
+@media (max-width: 739px) {
+
+    header {
+        position: absolute;
+        background-color: white;
+        z-index: 1000;   
+    }
+    .non-mobile {
+        display: none;
+    }
+
+    .mobile-nav-toggle {
+        background: rgb(255, 255, 255) url("../../shared-assets/mobile/icon-hamburger.svg");
+        background-size: cover;
+        border: none;
+        height: 1.5em;
+        width: 1.5em;
+
+        position: absolute;
+        top: 2em;
+        right: 2em;    
+    }
+    
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url("../../shared-assets/mobile/icon-close.svg");
+    }
+    
+    .mobile-primary-navigation {
+        background-color: black;
+        height: 20%;
+        transform: translateY(-100%);
+
+        position: absolute;
+        inset: 0 0 0 0;
+        z-index: 0;
+        
+    }
+    
+    .mobile-primary-navigation[data-visible="true"] {
+        transform: translateY(4.5em);
+        transition: transform 350ms ease-out
+    }
+    
+    .mobile-primary-navigation li {
+        color: white;
+        font-size: 1.5rem;
+        letter-spacing: .083em;
+        margin: 1em 0 0 1em;
+    }
+    
+    .overlay[data-visible="true"] {
+        background-color: black;
+        height: 100%;
+        position: absolute;
+        opacity: .7;
+        z-index: -1;
+        width: 100%;
+    }
+    /*  not in html */
+    .hero-container {
+        position: relative;
+        inset: 4.5em 0 0 0;
+    }
+
+    .hero-container[data-visible="false"] {
+        z-index: -999;
+    }
+    /* ---------- */
+}
