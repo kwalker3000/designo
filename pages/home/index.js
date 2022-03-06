@@ -1,5 +1,5 @@
 const primaryNav = document.querySelector('.mobile-primary-navigation')
-const navToggle = document.querySelector('.mobile-nav-toggle')
+const navToggle = document.querySelector('.mobile-nav-btn')
 const overlay = document.querySelector('.overlay')
 const heroContainer = document.querySelector('.hero-container')
 const mainSection = document.querySelector('main')

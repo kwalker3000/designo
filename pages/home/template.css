@@ -5,11 +5,33 @@ html, body {
     font-family: 'Jost', sans-serif; 
 }
 
+body {
+    max-width: 1250px;
+}
+
+@media (min-width: 740px) {
+
+    .page-wrapper {
+        width: 90%;
+        max-width: 1060px;
+        margin: auto;
+    }
+
+    li {
+        margin-left: 2em;
+    }
+}
+
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     
+}
+
+li {
+    font-size: .875rem;
+    letter-spacing: .143em;
 }
 
 a {
@@ -19,7 +41,9 @@ a {
     text-transform: uppercase;
 }
 
-
+a:hover, a:focus {
+    text-decoration: underline;
+}
 
 /* ------- Header ---------- */
 
@@ -46,28 +70,47 @@ header {
         inset: -3em 1em 1em 22em; */
     }
 
-    .primary-navigation a {
+    .primary-navigation li {
         margin-left: 2em;
-        font-size: .875rem;
-        letter-spacing: .143em;
     }
 
     .logo {
         margin: 2.5em 0 2.5em 0;
     }
 
-    .mobile-nav-toggle {
+    .mobile-nav-btn,
+    .mobile {
         display: none;
     }
 
     .non-mobile {
         display: flex;
     }
-
-    .mobile {
-        display: none
-    }
 }
+
+/*  --------- Footer ------------ */
+
+.contact {
+    line-height: 1.625em;
+    color: rgba(255, 255, 255, .5);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+svg {
+    fill: #E7816B;
+    margin-left: .5em;
+}
+
+svg:hover,
+svg:focus,
+.social a {
+    fill: #FFAD9B;
+    text-decoration: none;
+}
+
 
 /* ------- Responsive Navbar --------- */
 
@@ -82,7 +125,7 @@ header {
         display: none;
     }
 
-    .mobile-nav-toggle {
+    .mobile-nav-btn {
         background: rgb(255, 255, 255) url("../../shared-assets/mobile/icon-hamburger.svg");
         background-size: cover;
         border: none;
@@ -94,7 +137,7 @@ header {
         right: 2em;    
     }
     
-    .mobile-nav-toggle[aria-expanded="true"] {
+    .mobile-nav-btn[aria-expanded="true"] {
         background-image: url("../../shared-assets/mobile/icon-close.svg");
     }
     
