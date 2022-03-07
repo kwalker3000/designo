@@ -18,7 +18,7 @@ body {
     inset: 0;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 690px) {
 
     li {
         margin-left: 2em;
@@ -62,7 +62,7 @@ header {
     max-width: 200px;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 690px) {
     .primary-navigation {
         display: flex;
         align-items: center;
@@ -164,9 +164,11 @@ svg:focus,
     height: 815px;
     position: absolute;
     inset: 75% 0 0 0;
+
+    z-index: -1;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 690px) {
     
     .footer-bkg {
         height: 415px;
@@ -221,7 +223,7 @@ svg:focus,
 
 /* ------- Responsive Navbar --------- */
 
-@media (max-width: 739px) {
+@media (max-width: 689px) {
 
     header {
         background-color: white;
