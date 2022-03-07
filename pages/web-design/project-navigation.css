@@ -1,0 +1,120 @@
+/* ------ Project Navigation Section --------*/
+
+.project-navigation {
+    display: grid;
+    grid-gap: 1.5em;
+}
+
+.project-navigation {
+    color: #fff;
+    cursor: pointer;
+    height: 250px;
+    text-transform: uppercase;
+}
+
+.project-navigation > div:hover,
+.project-navigation > div:focus {
+    background-blend-mode: soft-light;
+    background-color: #B15A47;
+    opacity: .75;
+}
+
+.web-design,
+.app-design,
+.graphic-design {
+    align-items: center;
+    background-blend-mode: overlay;
+    background-color: hsla(0, 0%, 10%, .85);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1.4em;
+}
+
+/* .web-design {
+    background-image: url("./assets/mobile/image-web-design.jpg");
+} */
+
+.app-design {
+    background-image: url("../../shared-assets/mobile/image-app-design.jpg");
+}
+
+.graphic-design {
+    background-image: url("../../shared-assets/mobile/image-graphic-design.jpg");
+    margin-bottom: 6em;
+}
+
+.project-navigation h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: .09rem;
+    margin-bottom: 0;
+}
+
+.project-navigation p {
+    font-size: .94rem;
+    font-weight: 500;
+    letter-spacing: .31rem;
+}
+
+.arrow {
+    position: relative;
+    left: 1em;
+}
+
+@media (min-width: 740px) {
+
+    .project-navigation h2 {
+        font-size: 2.5rem;
+        letter-spacing: .125rem;
+    }
+
+    .web-design,
+    .app-design,
+    .graphic-design {
+        margin: 0;
+    }
+
+    .web-design {
+        background-image: url("./assets/tablet/image-web-design.jpg");
+    }
+    
+    .app-design {
+        background-image: url("./assets/tablet/image-app-design.jpg");
+    }
+    
+    .graphic-design {
+        background-image: url("./assets/tablet/image-graphic-design.jpg");
+    }
+}
+
+@media (min-width: 1140px) {
+
+    .project-navigation {
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: 640px;
+    }
+
+    .project-navigation > div {
+        height: auto;
+    }
+
+    .web-design {
+        grid-row: span 2;
+    }
+
+    .web-design {
+        background-image: url("./assets/desktop/image-web-design-large.jpg");
+    }
+    
+    .app-design {
+        background-image: url("./assets/desktop/image-app-design.jpg");
+    }
+    
+    .graphic-design {
+        background-image: url("./assets/desktop/image-graphic-design.jpg");
+    }
+}

@@ -100,7 +100,7 @@ footer {
     text-align: center;
     padding-bottom: 40px;
     position: relative;
-    inset: 100% 0 0 0;
+    inset: 0 0 0 0;
     width: 100%;
     z-index: 1;
 
