@@ -22,16 +22,24 @@ h2, button {
 /*  -------- Title Section ---------- */
 
 .page-title {
-    /* background-color: ; */
     background: #E7816B no-repeat url("../../shared-assets/mobile/bg-pattern-design-pages-intro-mobile.svg");
     background-position: 100% 0%;
-    color: #FFF;
+    
     grid-row: 1 / 2;
     grid-column: span 3;
     height: 320px;
+    
+}
+
+.max-container {
+    color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
+    max-width: 428px;
+    margin: 0 auto;
+
 }
 
 .page-title h1 {
@@ -59,11 +67,6 @@ h2, button {
     .page-title h1 {
         font-size: 3rem;
     }
-
-    .page-title p {
-        margin-right: 10em;
-        margin-left: 10em;
-    }
 }
 
 /*  --------- Sub Grid ----------- */
@@ -84,9 +87,6 @@ h2, button {
     grid-row: 2/ 3;
     grid-column: span 3;
 }
-/* .start {
-    grid-row: 3 / 4;
-} */
 
 @media (min-width: 1120px) {
 

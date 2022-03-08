@@ -149,14 +149,6 @@ header {
 
     .call-to-action h2 {
         font-size: 2.5rem;
-        margin-left: 4em;
-        margin-right: 4em;
-    }
-
-    .page-title p,
-    .call-to-action p {
-        margin-left: 10em;
-        margin-right: 10em;
     }
 }
 /*  --------- Footer ------------ */
@@ -229,23 +221,9 @@ svg:focus,
     grid-column: 1 / 4;
     z-index: -1;
 }
-/* 
-.footer-bkg {
-    background-color: #1D1C1E;
-    height: 815px;
-    position: absolute;
-    inset: 75% 0 0 0;
-
-    z-index: -1;
-} */
 
 @media (min-width: 690px) {
     
-    /* .footer-bkg {
-        height: 415px;
-        inset: 96% 0 0 0;
-    } */
-
     .navigation-wrapper,
     .contact-wrapper {
         display: flex;
