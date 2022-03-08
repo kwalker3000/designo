@@ -41,7 +41,7 @@ h2, button {
 
 .secondary-grid {
     display: grid;
-    grid-template-rows: repeat(6, auto) 4em auto;
+    grid-template-rows: repeat(6, auto) 4em repeat(2, auto);
     /* grid-template: repeat(6, auto) 4em auto / repeat(auto-fit, 350px); */
     /* grid-template-areas: 
       "ex ex ex ex ex ex"
@@ -53,19 +53,24 @@ h2, button {
       ".  .  .  .  .  ."
       "pr1 pr1 pr1 pr1 pr1"; */
     grid-auto-rows: auto;
-    grid-gap: 20px;
+    grid-gap: 25px;
 }
 
 .secondary-grid > a {
     text-transform: none;
 }
 
+@media (min-width: 1120px) {
+
+    .secondary-grid {
+        grid-template: repeat(2, auto) 4em auto / repeat(auto-fit, minmax(125px, 2fr));
+    }
+}
+
 /* -------- Examples Section --------- */
 
 .example {
     background-color: #FDF3F0;
-    /* grid-row: 1; */
-    grid-column: span 1;
     display: flex;
     flex-direction: column;
 }
@@ -125,10 +130,10 @@ a:focus > div {
 
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1120px) {
 
-    .secondary-grid {
-        grid-template: repeat(6, auto) 4em auto / repeat(3, minmax(275px, 1fr));
+    .secondary-grid > a {
+        grid-column: span 2;
     }
 
     .example {
@@ -139,4 +144,24 @@ a:focus > div {
         border-radius: 15px 15px 0 0;
         max-width: 100%;
     }
+}
+
+/* --------- Project Navigation --------- */
+
+.app-design {
+    grid-row: -3 / -2;
+}
+
+.graphic-design {
+    grid-row: -2 / -1;
+}
+
+@media (min-width: 1120px) {
+
+    .app-design,
+    .graphic-design {
+        grid-row: -1;
+        grid-column: span 3;
+    }
+
 }

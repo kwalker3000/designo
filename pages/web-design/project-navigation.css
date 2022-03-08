@@ -12,8 +12,8 @@
     text-transform: uppercase;
 }
 
-.project-navigation > div:hover,
-.project-navigation > div:focus {
+.project-navigation:hover,
+.project-navigation:focus {
     background-blend-mode: soft-light;
     background-color: #B15A47;
     opacity: .75;
@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 1.4em;
+    /* margin: 0 1.4em; */
 }
 
 /* .web-design {
@@ -44,7 +44,6 @@
 
 .graphic-design {
     background-image: url("../../shared-assets/mobile/image-graphic-design.jpg");
-    margin-bottom: 6em;
 }
 
 .project-navigation h2 {
@@ -98,13 +97,13 @@
         height: 640px;
     }
 
-    .project-navigation > div {
+    .project-navigation {
         height: auto;
     }
 
-    .web-design {
+    /* .web-design {
         grid-row: span 2;
-    }
+    } */
 
     .web-design {
         background-image: url("./assets/desktop/image-web-design-large.jpg");

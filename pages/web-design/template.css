@@ -6,12 +6,12 @@ html, body {
 }
 
 body {
-    max-width: 1250px;
+    max-width: 1300px;
 }
 
 .page-wrapper {
     width: 90%;
-    max-width: 1060px;
+    max-width: 1110px;
     margin: auto;
 
     position: absolute;
