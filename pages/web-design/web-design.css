@@ -13,12 +13,7 @@ h2, button {
 
 .main-grid {
     display: grid;
-    grid-template: auto 4em auto 4em auto / 100%;
-    /* grid-template-areas: 
-      "title"
-      "."
-      "mock"
-      "mock"; */
+    grid-template: auto 7em auto 4em auto / 100%;
     text-align: center;
 }
 
@@ -42,17 +37,6 @@ h2, button {
 .secondary-grid {
     display: grid;
     grid-template-rows: repeat(6, auto) 4em repeat(2, auto);
-    /* grid-template: repeat(6, auto) 4em auto / repeat(auto-fit, 350px); */
-    /* grid-template-areas: 
-      "ex ex ex ex ex ex"
-      "ex ex ex ex ex ex"
-      "ex ex ex ex ex ex"
-      "ex ex ex ex ex ex"
-      "ex ex ex ex ex ex"
-      "ex ex ex ex ex ex"
-      ".  .  .  .  .  ."
-      "pr1 pr1 pr1 pr1 pr1"; */
-    grid-auto-rows: auto;
     grid-gap: 25px;
 }
 
@@ -149,11 +133,24 @@ a:focus > div {
 /* --------- Project Navigation --------- */
 
 .app-design {
+    background-image: url("../../shared-assets/mobile/image-app-design.jpg");
     grid-row: -3 / -2;
 }
 
 .graphic-design {
+    background-image: url("../../shared-assets/mobile/image-graphic-design.jpg");
     grid-row: -2 / -1;
+}
+
+@media (min-width: 690px) {
+
+    .app-design {
+        background-image: url("../../shared-assets/tablet/image-app-design.jpg");
+    }
+
+    .graphic-design {
+        background-image: url("../../shared-assets/tablet/image-graphic-design.jpg");
+    }
 }
 
 @media (min-width: 1120px) {
@@ -162,6 +159,14 @@ a:focus > div {
     .graphic-design {
         grid-row: -1;
         grid-column: span 3;
+    }
+
+    .app-design {
+        background-image: url("../../shared-assets/desktop/image-app-design.jpg");
+    }
+
+    .graphic-design {
+        background-image: url("../../shared-assets/desktop/image-graphic-design.jpg");
     }
 
 }
