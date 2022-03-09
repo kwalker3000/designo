@@ -10,7 +10,10 @@ html, body {
 
 body {
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
+
+    display: grid;
+    grid-template: auto 0px / 100%;
 
 }
 
@@ -20,12 +23,14 @@ body {
     display: grid;
     grid-template: 
       repeat(2, auto) 187px 187px 570px / 1.5em 1fr 1.5em;
+
+    grid-row: 1 / 2;
 }
 
 @media (min-width: 690px) {
 
     .page-wrapper {
-        grid-template: repeat(2, auto) 16.5em 5em 19em / 1.5em 1fr 1.5em;
+        grid-template: repeat(2, auto) 264px 80px 304px / 1.5em 1fr 1.5em;
     }
 }
 
@@ -161,6 +166,30 @@ header {
         font-size: 2.5rem;
     }
 }
+
+@media (min-width: 1120px) {
+
+    .call-to-action {
+        background-position-x: 98%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+    
+    #btm-max-container {
+        height: auto;
+        margin: 0;
+    }
+
+    #btm-max-container h2 {
+        margin: 0;
+    }
+
+    #btm-max-container p {
+        margin-left: 0;
+    }
+}
 /*  --------- Footer ------------ */
 
 footer,
@@ -227,8 +256,11 @@ svg:focus,
 }
 
 .footer-bkg {
-    grid-row: -3 / -1;
-    grid-column: 1 / 4;
+    grid-row: -2 / -1;
+    height: 757px;
+    position: relative;
+    inset: -757px 0 0 0;
+    /* grid-column: 1 / 4; */
     z-index: -1;
 }
 
@@ -276,6 +308,11 @@ svg:focus,
     .social {
         align-self: end;
         margin-bottom: 1.8em;
+    }
+
+    .footer-bkg {
+        height: 384px;
+        inset: -384px 0 0 0;
     }
 }
 

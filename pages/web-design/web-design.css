@@ -19,6 +19,41 @@ h2, button {
     text-decoration: none;
 }
 
+/*  --------- Sub Grid ----------- */
+
+.secondary-grid {
+    display: grid;
+    grid-template: auto 2em repeat(6, auto) 2em repeat(2, auto) 4em / 1.5em 1fr 1.5em;
+    grid-row-gap: 2em;
+    text-align: center;
+}
+
+
+
+.empty {
+    grid-row: 2/ 3;
+    grid-column: 1 / -1;
+}
+
+@media (min-width: 690px) {
+    
+    .secondary-grid {
+        grid-template: auto 4em repeat(6, auto) 4em repeat(2, auto) 6em / 1.5em 1fr 1.5em;
+        grid-row-gap: 1.3em;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .secondary-grid {
+        grid-template: auto 6em repeat(2, auto) 6em auto 8em / .2em repeat(6, 1fr) .2em;
+        grid-gap: 1.3em;
+
+        /* grid-template: 
+          auto 6em repeat(2, auto) 6em auto 8em / 1.5em repeat95.5% 1.5em */
+    }
+}
+
 /*  -------- Title Section ---------- */
 
 .page-title {
@@ -26,7 +61,7 @@ h2, button {
     background-position: 100% 0%;
     
     grid-row: 1 / 2;
-    grid-column: span 3;
+    grid-column: 1 / -1;
     height: 320px;
     
 }
@@ -36,7 +71,6 @@ h2, button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     max-width: 428px;
     margin: 0 auto;
 
@@ -69,41 +103,20 @@ h2, button {
     }
 }
 
-/*  --------- Sub Grid ----------- */
+@media (min-width: 1120px) {
 
-.secondary-grid {
-    display: grid;
-    grid-template: auto 2em repeat(6, auto) 2em repeat(2, auto) 4em / 1.5em 1fr 1.5em;
-    grid-row-gap: 2em;
-    text-align: center;
+    .page-title {
+        background-position: 98% 52%;
+        grid-column: 2 / -2;
+    }
 }
+
+/* -------- Examples Section --------- */
 
 .secondary-grid > a {
     grid-column: 2 / 3;
     text-transform: none;
 }
-
-.empty {
-    grid-row: 2/ 3;
-    grid-column: span 3;
-}
-
-@media (min-width: 690px) {
-    
-    .secondary-grid {
-        grid-template: auto 4em repeat(6, auto) 4em repeat(2, auto) 6em / 1.5em 1fr 1.5em;
-        grid-row-gap: 1.3em;
-    }
-}
-
-@media (min-width: 1120px) {
-
-    .secondary-grid {
-        grid-template: auto 6em repeat(2, auto) 6em auto 8em / repeat(auto-fit, minmax(125px, 2fr));
-    }
-}
-
-/* -------- Examples Section --------- */
 
 .example {
     background-color: #FDF3F0;
@@ -164,8 +177,16 @@ a:focus > div {
 
 @media (min-width: 1120px) {
 
-    .secondary-grid > a {
-        grid-column: span 2;
+    #col1 {
+        grid-column: 2 / 4;
+    }
+
+    #col2 {
+        grid-column: 4 / 6;
+    }
+
+    #col3 {
+        grid-column: 6 / -2;
     }
 
     .example {
@@ -210,16 +231,18 @@ a:focus > div {
 
     .app-design,
     .graphic-design {
-        grid-row: -1;
-        grid-column: span 3;
+        grid-row: -3;
+        /* grid-column: span 3; */
     }
 
     .app-design {
         background-image: url("../../shared-assets/desktop/image-app-design.jpg");
+        grid-column: 2 / 5;
     }
 
     .graphic-design {
         background-image: url("../../shared-assets/desktop/image-graphic-design.jpg");
+        grid-column: 5 / -2;
     }
 
 }
