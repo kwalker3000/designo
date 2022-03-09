@@ -6,9 +6,12 @@ html, body {
     
 }
 
+
+
 body {
     width: 100%;
     max-width: 1300px;
+
 }
 
 .page-wrapper {
@@ -19,7 +22,7 @@ body {
       repeat(2, auto) 187px 187px 570px / 1.5em 1fr 1.5em;
 }
 
-@media (min-width: 590px) {
+@media (min-width: 690px) {
 
     .page-wrapper {
         grid-template: repeat(2, auto) 16.5em 5em 19em / 1.5em 1fr 1.5em;

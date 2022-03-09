@@ -99,7 +99,7 @@ h2, button {
 @media (min-width: 1120px) {
 
     .secondary-grid {
-        grid-template: repeat(2, auto) 4em auto / repeat(auto-fit, minmax(125px, 2fr));
+        grid-template: auto 6em repeat(2, auto) 6em auto 8em / repeat(auto-fit, minmax(125px, 2fr));
     }
 }
 
