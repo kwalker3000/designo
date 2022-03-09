@@ -1,0 +1,180 @@
+.call-to-action {
+    border-radius: 15px;
+}
+
+.max-container { /* call-to-action */
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 428px;
+    margin: 0 auto;
+}
+
+/*  --------- Sub Grid Layout ----------- */
+
+.secondary-grid {
+    display: grid;
+    grid-template: repeat(2, auto) 4em auto 4em auto 4em / 1.5em 1fr 1.5em;
+    grid-template-areas:
+      "sec1 sec1 sec1"
+      "sec2 sec2 sec2"
+      ". . ."
+      "sec3 sec3 sec3"
+      ". . ."
+      "sec4 sec4 sec4"
+      ". . .";
+
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+
+    text-align: center;
+}
+
+@media (min-width: 690px) {
+    
+    .secondary-grid {
+        grid-template: auto 4em auto 4em auto 4em auto 4em / 1.5em 1fr 1.5em;
+        /* grid-row-gap: 1.3em; */
+
+        grid-template-areas:
+            ". sec1 ."
+            ". . ."
+            ". sec2 ."
+            ". . ."
+            ". sec3 ."
+            ". . ."
+            ". sec4 ."
+            ". . .";
+    }
+}
+
+.sec1 {
+    color: #FFF;
+    grid-area: sec1;
+}
+
+.sec2 {
+    grid-area: sec2;
+}
+
+.sec3 {
+    grid-area: sec3;
+}
+
+.sec4 {
+    grid-area: sec4;
+}
+
+/* || Display Props */
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  || Typography */
+
+h1, h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.09em;
+}
+
+button, .upper {
+    text-transform: uppercase;
+}
+
+section {
+    text-align: center;
+}
+
+.p-font {
+    font-size: .9375rem;
+    line-height: 1.667em;
+}
+
+@media (min-width: 690px) {
+
+    .p-font {
+        font-size: 1rem;
+        line-height: 1.625em;
+    }
+}
+/* || Content Spacing */
+
+section > div {
+    padding: 5em 0 5em;
+}
+
+h1, h2 {
+    margin-top: 0
+}
+
+.p-font {
+    margin: 0 1.5em;
+}
+
+.gap {
+    margin-bottom: 1.5em;
+}
+
+@media (min-width: 690px) {
+
+    .p-font {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+
+/* || Color Palette */
+
+.sec1,
+.location > button {
+    background-color: #E7816B;
+}
+
+.sec2,
+.sec4 {
+    background-color: #FDF3F0;
+}
+
+section h2 { 
+    color: #E7816B;
+}
+
+/* ---- */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ------- Responsive Image Change ------ */
+
+.tablet-img,
+.desktop-img {
+    display: none;
+}
+
+@media (min-width: 690px) {
+
+    .mobile-img {
+        display: none;
+    }
+
+    .tablet-img {
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .tablet-img {
+        display: none
+    }
+
+    .desktop-img {
+        display: block;
+    }
+}
