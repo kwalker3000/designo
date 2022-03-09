@@ -6,12 +6,8 @@ html, body {
     
 }
 
-
-
 body {
-    width: 100%;
-    /* max-width: 1300px; */
-
+    /* width: 100%; */
     display: grid;
     grid-template: auto 0px / 100%;
 
@@ -31,6 +27,13 @@ body {
 
     .page-wrapper {
         grid-template: repeat(2, auto) 264px 80px 304px / 1.5em 1fr 1.5em;
+    }  
+}
+
+@media (min-width: 1120px) {
+
+    .page-wrapper {
+        grid-template: repeat(2, auto) 244px 60px 304px / 1.5em 1fr 1.5em;
     }
 }
 
@@ -156,6 +159,17 @@ header {
     margin-top: 1em;
 }
 
+.call-to-action button:hover,
+.call-to-action button:focus {
+    background-color: #FFAD9B;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#btm-max-container {
+    height: auto;
+}
+
 @media (min-width: 590px) {
 
     .call-to-action {
@@ -260,7 +274,6 @@ svg:focus,
     height: 757px;
     position: relative;
     inset: -757px 0 0 0;
-    /* grid-column: 1 / 4; */
     z-index: -1;
 }
 
