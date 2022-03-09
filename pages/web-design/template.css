@@ -16,7 +16,14 @@ body {
     margin: auto;
     display: grid;
     grid-template: 
-      repeat(2, auto) 375px 800px / 1.5em 1fr 1.5em;
+      repeat(2, auto) 187px 187px 570px / 1.5em 1fr 1.5em;
+}
+
+@media (min-width: 590px) {
+
+    .page-wrapper {
+        grid-template: repeat(2, auto) 16.5em 5em 19em / 1.5em 1fr 1.5em;
+    }
 }
 
 ul {
@@ -98,7 +105,7 @@ header {
 .call-to-action {
     background: #E7816B url("../../shared-assets/desktop/bg-pattern-call-to-action.svg");
     background-position: 42% 48%;
-    grid-row: 3 / 4;
+    grid-row:  -4 / -2;
     grid-column: 2 / 3;
     text-align: center;
     color: #FFF;
@@ -161,7 +168,6 @@ footer,
 footer,
 .footer-bkg {
     background-color: #1D1C1E;
-    grid-row: -2 / -1;
 }
 
 footer {
@@ -170,7 +176,7 @@ footer {
     text-align: center;
     padding-bottom: 40px;
 
-    
+    grid-row: -2 / -1;
     grid-column: 2 / 3;
     justify-content: flex-end;
 }
@@ -218,6 +224,7 @@ svg:focus,
 }
 
 .footer-bkg {
+    grid-row: -3 / -1;
     grid-column: 1 / 4;
     z-index: -1;
 }
