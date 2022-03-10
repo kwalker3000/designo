@@ -168,6 +168,20 @@ header {
     cursor: pointer;
 }
 
+.call-to-action {
+    border-radius: 15px;
+}
+
+.max-container { /* call-to-action */
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 428px;
+    margin: 0 auto;
+}
+
 #btm-max-container {
     height: auto;
 }
@@ -188,14 +202,20 @@ header {
     .call-to-action {
         background-position-x: 98%;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         text-align: left;
     }
     
+    .call-to-action > button {
+		margin-right: 4.8em;
+		margin-top: 0;
+	}
+    
     #btm-max-container {
         height: auto;
         margin: 0;
+		margin-left: 4.5em;
     }
 
     #btm-max-container h2 {
