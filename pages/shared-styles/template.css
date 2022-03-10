@@ -149,9 +149,11 @@ header {
     margin-right: 1em;
 }
 
-.call-to-action button {
+.call-to-action button,
+.location > button {
     align-self: center;
     font-family: 'Jost', sans-serif;
+	color: #333136;
     letter-spacing: .0667em;
     padding: 1em 1.4em;
     border-radius: 8px;

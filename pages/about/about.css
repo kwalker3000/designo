@@ -1,3 +1,5 @@
+
+
 .call-to-action {
     border-radius: 15px;
 }
@@ -29,7 +31,6 @@
     grid-column: 1 / 4;
     grid-row: 2 / 3;
 
-    text-align: center;
 }
 
 @media (min-width: 690px) {
@@ -51,7 +52,6 @@
 }
 
 .sec1 {
-    color: #FFF;
     grid-area: sec1;
 }
 
@@ -76,23 +76,41 @@ section {
 
 /*  || Typography */
 
-h1, h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.09em;
-}
-
-button, .upper {
-    text-transform: uppercase;
-}
-
 section {
     text-align: center;
 }
 
-.p-font {
+h1,
+h2,
+.location > p,
+.location > button {
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    line-height: 1.09em;
+}
+
+.p-font,
+.location > button {
     font-size: .9375rem;
+}
+
+button,
+.upper {
+    text-transform: uppercase;
+}
+
+.p-font {
     line-height: 1.667em;
+}
+
+.location > p {
+    font-size: 1.25rem;
+    letter-spacing: .25em;
+    line-height: 1.3em;
 }
 
 @media (min-width: 690px) {
@@ -108,14 +126,8 @@ section > div {
     padding: 5em 0 5em;
 }
 
-.work {
-    align-self: center;
-    font-family: 'Jost', sans-serif;
-    letter-spacing: .0667em;
-    padding: 1.2em 2.15em;
-    border-radius: 8px;
-    border: none;
-    margin-top: 1em;
+.location > button {
+    padding: 1em 1.37em;
 }
 
 h1, h2 {
@@ -155,9 +167,14 @@ h1, h2 {
 
 /* || Color Palette */
 
+body {
+    color: #333136;
+}
+
 .sec1,
 .location > button {
     background-color: #E7816B;
+    color: #FFF;
 }
 
 .sec2,
@@ -165,15 +182,26 @@ h1, h2 {
     background-color: #FDF3F0;
 }
 
+.location > button:hover,
+.location > button:focus {
+    background-color: #FFAD9B;
+}
+
 section h2 { 
     color: #E7816B;
 }
 
+/* || Misc  */
+
+.location > button {
+    cursor: pointer;
+}
+
 /* ---- */
-img {
+/* img {
     width: 100%;
     height: auto;
-}
+} */
 
 /* ------- Responsive Image Change ------ */
 
