@@ -74,6 +74,28 @@ section {
     flex-direction: column;
 }
 
+@media (min-width: 1120px) {
+
+    section {
+        flex-direction: row;
+    }
+
+    .sec1 > div,
+    .sec2 > div,
+    .sec4 > div {
+        align-self: center;
+    }
+
+    .sec1 > div,
+    .sec4 > div {
+        order: -1;
+    }
+
+    .sec3 {
+        justify-content: space-around;
+    }
+}
+
 /*  || Typography */
 
 section {
@@ -130,6 +152,15 @@ button,
         line-height: 1.625em;
     }
 }
+
+@media (min-width: 1120px) {
+    
+    .sec1,
+    .sec2,
+    .sec4 {
+        text-align: left;
+    }
+}
 /* || Box Props */
 
 section > div {
@@ -169,6 +200,33 @@ h1, h2 {
     .p-font {
         margin-left: 4.5em;
         margin-right: 4.5em;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .sec1 > div,
+    .sec2 > div,
+    .sec4 > div {
+        padding: 0;
+    }
+
+    .sec2 > div h2,
+    .sec4 > div h2 {
+        margin-left: 1.8em;
+    }
+    
+    .sec1 > img,
+    .sec4 > img {
+        border-radius: 0 15px 15px 0;
+    }
+
+    .sec1 > div h1 {
+        margin-left: 1.5em;
+    }
+
+    .sec2 > img {
+        border-radius: 15px 0 0 15px;
     }
 }
 
@@ -222,6 +280,9 @@ section h2 {
 
 @media (min-width: 690px) {
 
+    .sec1,
+    .sec2,
+    .sec4,
     .sec1 > div,
     .sec2 > div,
     .sec4 > div {
@@ -242,6 +303,29 @@ section h2 {
     }
 }
 
+@media (min-width: 1120px) {
+
+    .sec1 > div,
+    .sec2 > div,
+    .sec4 > div {
+        background-image: none;
+    }
+
+    .sec1 {
+        background-image: url("./assets/desktop/bg-pattern-hero-about-desktop.svg");
+        background-position: -3% 100%;
+    }
+
+    .sec2 {
+        background-image: url("../../shared-assets/desktop/bg-pattern-three-circles.svg");
+        background-position: 60% 100%;
+    }
+
+    .sec4 {
+        background-image: url("../../shared-assets/desktop/bg-pattern-two-circles.svg");
+        background-position: 0% 100%;
+    }
+}
 /* || Misc  */
 
 .location > button {
