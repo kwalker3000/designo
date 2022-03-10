@@ -1,37 +1,37 @@
-/* ------ Project Navigation Section --------*/
+/* - Table of Contents
 
-.project-navigation {
-    color: #fff;
-    cursor: pointer;
-    height: 250px;
-    text-transform: uppercase;
-}
+-- Display Props
+-- Typography
+-- Box Props
+-- Color & Imgs
+-- Misc               */
 
-.project-navigation:hover,
-.project-navigation:focus {
-    background-blend-mode: soft-light;
-    background-color: #B15A47;
-    opacity: .75;
-}
+
+/* || Display Props */
 
 .web-design,
 .app-design,
 .graphic-design {
-    background-blend-mode: overlay;
-    background-color: hsla(0, 0%, 10%, .85);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.arrow {
+    position: relative;
+    left: .3em;
+}
+
+/* || Typography */
+
+.project-navigation {
+    text-transform: uppercase;
 }
 
 .project-navigation h2 {
     font-size: 1.75rem;
     font-weight: 500;
     letter-spacing: .05em;
-    margin: 0;
 }
 
 .project-navigation p {
@@ -40,15 +40,49 @@
     letter-spacing: .3125em;
 }
 
-.arrow {
-    position: relative;
-    left: .3em;
-}
-
 @media (min-width: 690px) {
 
     .project-navigation h2 {
         font-size: 2.5rem;
         letter-spacing: .05em;
     }
+}
+
+/* || Box Props */
+
+.web-design,
+.app-design,
+.graphic-design {
+    border-radius: 15px;
+}
+
+.project-navigation {
+    height: 250px;
+}
+
+.project-navigation h2 {
+    margin: 0;
+}
+
+/* || Color & Imgs */
+
+.project-navigation:hover,
+.project-navigation:focus {
+    background-blend-mode: soft-light;
+    background-color: #B15A47;
+    opacity: .75;
+}
+
+.project-navigation {
+    background-blend-mode: overlay;
+    background-color: hsla(0, 0%, 10%, .85);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+/* || Misc */
+
+.project-navigation {
+    cursor: pointer;
 }

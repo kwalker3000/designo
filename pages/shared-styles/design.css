@@ -7,10 +7,6 @@
 -- Color & Imgs
 -- Misc               */
 
-.secondary-grid > a:hover,
-.secondary-grid > a:focus {
-    text-decoration: none;
-}
 
 /* || Grid Layout */
 
@@ -142,6 +138,11 @@ h2, button {
     text-transform: uppercase;
 }
 
+.secondary-grid > a:hover,
+.secondary-grid > a:focus {
+    text-decoration: none;
+}
+
 .secondary-grid {
     text-align: center;
 }
@@ -239,7 +240,7 @@ h2, button {
     }
 }
 
-/* || Color / Imgs */
+/* || Color & Imgs */
 
 .example:hover > div h2,
 .example:hover > div,
