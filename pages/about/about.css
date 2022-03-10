@@ -177,9 +177,9 @@ body {
     color: #FFF;
 }
 
-.sec2,
-.sec4 {
-    background-color: #FDF3F0;
+.sec2 > div,
+.sec4 > div {
+    background: #FDF3F0 url("../../shared-assets/desktop/bg-pattern-three-circles.svg");
 }
 
 .location > button:hover,
@@ -189,6 +189,23 @@ body {
 
 section h2 { 
     color: #E7816B;
+}
+
+.sec1 > div {
+    background-image: url("./assets/mobile/bg-pattern-hero-about-mobile.svg");
+    background-position: 100% 26%;
+}
+
+.canada {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-down.svg");
+}
+
+.australia {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle.svg");
+}
+
+.kingdom {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-up.svg")
 }
 
 /* || Misc  */

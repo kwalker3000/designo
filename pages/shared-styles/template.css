@@ -350,6 +350,7 @@ svg:focus,
         background: rgb(255, 255, 255) url("../../shared-assets/mobile/icon-hamburger.svg");
         background-size: cover;
         border: none;
+		cursor: pointer;
         height: 1.5em;
         width: 1.5em;
         margin-right: 1.8em;
