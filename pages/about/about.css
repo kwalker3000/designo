@@ -115,6 +115,16 @@ button,
 
 @media (min-width: 690px) {
 
+    h1 {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 1.2em;
+    }
+
     .p-font {
         font-size: 1rem;
         line-height: 1.625em;
@@ -157,12 +167,9 @@ h1, h2 {
     }
 
     .p-font {
-        margin-left: 4em;
-        margin-right: 4em;
+        margin-left: 4.5em;
+        margin-right: 4.5em;
     }
-
-
-
 }
 
 /* || Color Palette */
@@ -177,9 +184,14 @@ body {
     color: #FFF;
 }
 
+.sec2,
+.sec4 {
+    background-color: #FDF3F0;
+}
+
 .sec2 > div,
 .sec4 > div {
-    background: #FDF3F0 url("../../shared-assets/desktop/bg-pattern-three-circles.svg");
+    background-image: url("../../shared-assets/desktop/bg-pattern-three-circles.svg");
 }
 
 .location > button:hover,
@@ -206,6 +218,28 @@ section h2 {
 
 .kingdom {
     background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-up.svg")
+}
+
+@media (min-width: 690px) {
+
+    .sec1 > div,
+    .sec2 > div,
+    .sec4 > div {
+        background-repeat: no-repeat;
+    }
+    
+    .sec1 > div {
+        background-image: url("./assets/desktop/bg-pattern-hero-about-desktop.svg");
+        background-position: -140% 141%;
+    }
+
+    .sec2 > div {
+        background-position: 80% 147%;
+    }
+
+    .sec4 > div {
+        background-position: 80% 120%
+    }
 }
 
 /* || Misc  */
