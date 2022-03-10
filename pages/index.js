@@ -7,6 +7,7 @@ const secondaryGrid = document.querySelector('.secondary-grid')
 
 
 function handleMenuToggle(e) {
+	mainSection.addEventListener('click', handleMenuToggle)
     const blockTab = document.querySelector('.block-tab')
     const windowWidth = window.innerWidth;
     const isButton = e.target.localName === 'button'
@@ -46,7 +47,7 @@ function handleTabEvent(e) {
 }
 
 navToggle.addEventListener('click', handleMenuToggle)
-mainSection.addEventListener('click', handleMenuToggle)
+
 
 window.addEventListener('resize', handleMenuToggle)
 

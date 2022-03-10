@@ -102,14 +102,24 @@ section {
         line-height: 1.625em;
     }
 }
-/* || Content Spacing */
+/* || Box Props */
 
 section > div {
     padding: 5em 0 5em;
 }
 
+.work {
+    align-self: center;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: .0667em;
+    padding: 1.2em 2.15em;
+    border-radius: 8px;
+    border: none;
+    margin-top: 1em;
+}
+
 h1, h2 {
-    margin-top: 0
+    margin-top: 0;
 }
 
 .p-font {
@@ -122,10 +132,25 @@ h1, h2 {
 
 @media (min-width: 690px) {
 
+    .sec1,
+    .sec2,
+    .sec4 {
+        border-radius: 15px;
+    }
+
+    .sec1 > img,
+    .sec2 > img,
+    .sec4 > img {
+        border-radius: 15px 15px 0 0;
+    }
+
     .p-font {
         margin-left: 4em;
         margin-right: 4em;
     }
+
+
+
 }
 
 /* || Color Palette */
@@ -171,7 +196,7 @@ img {
 @media (min-width: 1120px) {
 
     .tablet-img {
-        display: none
+        display: none;
     }
 
     .desktop-img {
