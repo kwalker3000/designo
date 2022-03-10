@@ -231,7 +231,7 @@ h2, button {
     }
 }
 
-@media (min-width: 1120) {
+@media (min-width: 1120px) {
 
     .example img {
         border-radius: 15px 15px 0 0;
