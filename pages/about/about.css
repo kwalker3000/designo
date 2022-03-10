@@ -1,3 +1,12 @@
+/* - Table of Contents
+
+-- Layout
+-- Display Props
+-- Typography
+-- Box Props
+-- Color & Imgs
+-- Misc               */
+
 
 /*  --------- Sub Grid Layout ----------- */
 
@@ -15,14 +24,12 @@
 
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-
 }
 
 @media (min-width: 690px) {
     
     .secondary-grid {
         grid-template-rows: auto 6em auto 6em auto 9em auto 6em;
-        /* grid-row-gap: 1.3em; */
 
         grid-template-areas:
             ". sec1 ."
@@ -153,6 +160,7 @@ button,
         text-align: left;
     }
 }
+
 /* || Box Props */
 
 .sec1 > div,
@@ -325,17 +333,6 @@ section h2 {
         background-position: 0% 100%;
     }
 }
-/* || Misc  */
-
-.location > button {
-    cursor: pointer;
-}
-
-/* ---- */
-/* img {
-    width: 100%;
-    height: auto;
-} */
 
 /* ------- Responsive Image Change ------ */
 
@@ -364,4 +361,10 @@ section h2 {
     .desktop-img {
         display: block;
     }
+}
+
+/* || Misc  */
+
+.location > button {
+    cursor: pointer;
 }
