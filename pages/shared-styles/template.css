@@ -50,13 +50,8 @@ header {
 /*  --------- Call To Action -------- */
 
 .call-to-action {
-    background: #E7816B url("../../shared-assets/desktop/bg-pattern-call-to-action.svg");
-    background-position: 42% 48%;
     grid-row:  -4 / -2;
     grid-column: 2 / 3;
-    color: #FFF;
-
-    
 }
 
 
@@ -64,20 +59,10 @@ header {
 
 
 
-.call-to-action button,
-.location > button {
-	color: #333136;
-}
 
 .call-to-action button:hover,
 .call-to-action button:focus {
-    background-color: #FFAD9B;
-    color: #FFF;
     cursor: pointer;
-}
-
-.max-container { /* call-to-action */
-    color: #FFF;
 }
 
 
@@ -123,41 +108,19 @@ svg:focus,
 .footer-bkg {
     grid-row: -2 / -1;
     
-    position: relative;
+    /* position: relative;
     inset: -757px 0 0 0;
-    z-index: -1;
+    z-index: -1; */
 }
 
 @media (min-width: 690px) {
     
-    .navigation-wrapper,
-    .contact-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
+    
 
-    .navigation-wrapper ul {
-        display: flex;
-    }
+    
 
-    footer hr {
-        display: none;
-    }
-
-    .contact-wrapper div:nth-child(1) {
-        flex-grow: 2;
-    }
-
-    .contact-wrapper div:nth-child(2) {
-        flex-grow: 3;
-    }
-
-    .social {
-        align-self: end;
-    }
-
-    .footer-bkg {
-        inset: -384px 0 0 0;
+    .call-to-action {
+        background-position: 7% 49%;;
     }
 }
 
@@ -260,24 +223,43 @@ footer {
     justify-content: flex-end;
 }
 
+.footer-bkg {
+    position: relative;
+    inset: -757px 0 0 0;
+    z-index: -1;
+}
+
 @media (min-width: 690px) {
 
+    .primary-navigation,
+    .non-mobile,
+    .navigation-wrapper,
+    .navigation-wrapper ul,
+    .contact-wrapper {
+        display: flex
+    }
+
     .primary-navigation {  
-        display: flex;
         align-items: center;
     }
 
+    .mobile,
     .mobile-nav-btn,
-    .mobile {
+    .footer hr {
         display: none;
     }
 
-    .non-mobile {
-        display: flex;
+    .navigation-wrapper,
+    .contact-wrapper {
+        justify-content: space-between;
     }
 
-    .call-to-action {
-        background-position: 7% 49%;;
+    .social {
+        align-self: end;
+    }
+
+    .footer-bkg {
+        inset: -384px 0 0 0;
     }
 }
 
@@ -294,7 +276,7 @@ footer {
 
 html,
 body,
-.call-to-action button
+.call-to-action > button
 .location > button {
     font-family: 'Jost', sans-serif;
 }
@@ -335,7 +317,7 @@ footer {
 }
 
 .call-to-action h2,
-.call-to-action button {
+.call-to-action > button {
     font-weight: 500;
 }
 
@@ -409,6 +391,10 @@ ul {
 .logo {
     margin: 1.5em;
     max-width: 200px;
+}
+
+.call-to-action {
+    border-radius: 15px;
 }
 
 .call-to-action h2 {
@@ -501,16 +487,24 @@ svg {
         margin: 8px 0 0 2em; 
     }
 
+    .contact-wrapper {
+        padding-top: 1%;
+    }
+
+    .contact-wrapper div:nth-child(1) {
+        flex-grow: 2;
+    }
+
+    .contact-wrapper div:nth-child(2) {
+        flex-grow: 3;
+    }
+
     .social {
         margin-bottom: 1.8em;
     }
 
     .footer-bkg {
         height: 384px;
-    }
-
-    .contact-wrapper {
-        padding-top: 1%;
     }
 }
 
@@ -534,4 +528,27 @@ svg {
     #btm-max-container p {
         margin-left: 0;
     }
+}
+
+/* || Color & Imgs */
+
+.call-to-action {
+    background: #E7816B url("../../shared-assets/desktop/bg-pattern-call-to-action.svg");
+    background-position: 42% 48%;
+    color: #FFF;  
+}
+
+.call-to-action button,
+.location > button {
+	color: #333136;
+}
+
+.call-to-action button:hover,
+.call-to-action button:focus {
+    background-color: #FFAD9B;
+    color: #FFF;
+}
+
+.max-container { /* call-to-action */
+    color: #FFF;
 }
