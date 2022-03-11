@@ -1,17 +1,19 @@
-const primaryNav = document.querySelector('.mobile-primary-navigation')
-const navToggle = document.querySelector('.mobile-nav-btn')
-const overlay = document.querySelector('.overlay')
-// const heroContainer = document.querySelector('.hero-container')
-const mainSection = document.querySelector('main')
-const secondaryGrid = document.querySelector('.secondary-grid')
 
+const navToggle = document.querySelector('.mobile-nav-btn')
 
 function handleMenuToggle(e) {
-	mainSection.addEventListener('click', handleMenuToggle)
+	
+	const overlay = document.querySelector('.overlay')
+	// const heroContainer = document.querySelector('.hero-container')
+	const mainSection = document.querySelector('main')
+	const secondaryGrid = document.querySelector('.secondary-grid')
+	const primaryNav = document.querySelector('.mobile-primary-navigation')
     const blockTab = document.querySelector('.block-tab')
     const windowWidth = window.innerWidth;
     const isButton = e.target.localName === 'button'
     const isVisible = primaryNav.getAttribute('data-visible') === 'true'
+	
+	mainSection.addEventListener('click', handleMenuToggle)
 
     if (!isVisible && isButton) {
         primaryNav.setAttribute('data-visible', true)
@@ -51,3 +53,4 @@ navToggle.addEventListener('click', handleMenuToggle)
 
 window.addEventListener('resize', handleMenuToggle)
 
+console.log('file fyeya')

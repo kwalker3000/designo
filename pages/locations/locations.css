@@ -1,0 +1,64 @@
+#map { 
+    height: auto;
+    width: 100%; 
+}
+
+.secondary-grid {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template: 4fr 5fr 3em 4fr 5fr 3em 4fr 5fr 3em / 1.5em 1fr 1.5em;
+    grid-template-areas:
+      "mp1 mp1 mp1"
+      "cd1 cd1 cd1"
+      ". . ."
+      "mp2 mp2 mp2"
+      "cd2 cd2 cd2"
+      ". . ."
+      "mp3 mp3 mp3"
+      "cd3 cd3 cd3"
+      ". . .";
+}
+
+.sc-grid__map_pos--1 {
+    width: 100%;
+    grid-area: mp1;
+}
+
+.sc-grid__map_pos--2 {
+    grid-area: mp2;
+}
+
+.sc-grid__map_pos--3 {
+    grid-area: mp3;
+}
+
+.sc-grid__card_pos--1 {
+    grid-area: cd1;
+}
+
+.sc-grid__card_pos--2 {
+    grid-area: cd2;
+    background-color: red;
+}
+
+.sc-grid__card_pos--3 {
+    grid-area: cd3;
+}
+
+@media (min-width: 690px) {
+    
+    .secondary-grid {
+        grid-template-areas:
+      ". mp1 ."
+      ". cd1 ."
+      ". . ."
+      ". mp2 ."
+      ". cd2 ."
+      ". . ."
+      ". mp3 ."
+      ". cd3 ."
+      ". . .";
+    }
+}
