@@ -19,11 +19,6 @@
     const map2 = L.map('map_2', location2);
     const map3 = L.map('map_3', location3);
 
-    // const map3 = L.map('map_2',{
-    //     center: [-25.329435869112118, 149.7880389574583],
-    //     zoom: 15
-    //     });
-
     let maps = [map1, map2, map3]
     
     const options = {
