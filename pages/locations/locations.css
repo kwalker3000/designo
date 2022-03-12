@@ -1,14 +1,11 @@
-#map { 
-    height: auto;
-    width: 100%; 
-}
+
 
 .secondary-grid {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template: 4fr 5fr 3em 4fr 5fr 3em 4fr 5fr 3em / 1.5em 1fr 1.5em;
+    grid-template: repeat(3, 4fr 5fr 3em) / 1.5em 1fr 1.5em;
     grid-template-areas:
       "mp1 mp1 mp1"
       "cd1 cd1 cd1"
@@ -19,6 +16,18 @@
       "mp3 mp3 mp3"
       "cd3 cd3 cd3"
       ". . .";
+
+      grid-template: repeat(3, 4fr 5fr 3em) / 1.5em 1fr 1.5em;
+      grid-template-areas:
+        "mp1 mp1 mp1"
+        "cd1 cd1 cd1"
+        ". . ."
+        "mp2 mp2 mp2"
+        "cd2 cd2 cd2"
+        ". . ."
+        "mp3 mp3 mp3"
+        "cd3 cd3 cd3"
+        ". . .";
 }
 
 .sc-grid__map_pos--1 {
@@ -50,6 +59,8 @@
 @media (min-width: 690px) {
     
     .secondary-grid {
+        grid-row-gap: 1.5em;
+        grid-template-rows: repeat(3, 4fr 5fr 4em);
         grid-template-areas:
       ". mp1 ."
       ". cd1 ."
@@ -62,3 +73,59 @@
       ". . .";
     }
 }
+
+
+.map { 
+    height: auto;
+    min-width: 100%; 
+}
+
+
+.card__content,
+.card__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 3em 1fr 3em;
+    background-color: #FDF3F0;
+    /* align-items: center;
+    justify-content: center; */
+    padding: 5em 0;
+    text-align: center;
+}
+
+.card__content {
+    grid-column: 2 / 3;
+}
+
+.card__head {
+    color: #E7816B;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.125em;
+    margin: 0 0 0.5em;
+    width: 100%;
+}
+
+.card__text {
+    color: #333136;
+    font-size: 0.9375rem;
+    line-height: 1.667em;
+}
+
+.card__subtitle {
+    font-weight: 700;
+}
+
+@media (min-width: 690px) {
+
+    .map,
+    .card {
+        border-radius: 15px;
+    }
+
+}
+
