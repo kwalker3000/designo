@@ -8,99 +8,109 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link href="./index.css" rel="stylesheet">
-  <script src="./index.js" async></script>
+  <link href="./new.css" rel="stylesheet">
+  <script src="../index.js" async></script>
   
   <title>Designo Agency</title>
 </head>
-<body>
+<body class="page">
   
-  <div class="wrapper">
-    <div class="leaf leaf-top"></div>
+  <!-- <div class="wrapper"> -->
+    <!-- <div class="leaf leaf-top"></div> -->
   <div class="leaf leaf-bottom"></div>
-    <header>
+    <header class="header">
 
-        <img class="logo" src="../../shared-assets/desktop/logo-dark.png" alt="company-logo">
+        <img class="header__logo" src="../../shared-assets/desktop/logo-dark.png" alt="company-logo">
 
-          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <button class="header__nav-btn" aria-controls="navigation_primary" aria-expanded="false">
             <span class="sr-only"></span>
           </button>
 
-        <nav class="non-mobile">
-          <ul id="primary-navigation" class="menu primary-navigation" data-visible="false">
-            <li>
-              <a href="#">our company</a>
-            </li>
-            <li>
-              <a href="#">locations</a>
-            </li>
-            <li>
-              <a href="#">contact</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__nav">
+          <nav class="nav nave_primary nav_mobile--false">
+            <ul id="navigation_primary" class="nav__list" data-visible="false">
+              <li class="nav__item">
+                <a class="nav__link" href="#">our company</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">locations</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
     
     </header>
 
-    <nav class="mobile">
-      <ul id="primary-navigation" class="menu mobile-primary-navigation" data-visible="false">
+    <nav class="nav nav_mobile--true">
+      <ul id="navigation_primary" class="nav__list nav__list-mobile" data-visible="false">
+        <li class="nav__item-mobile">
+          <a class="nav__link" href="#">our company</a>
+        </li class="nav__item-mobile">
         <li>
-          <a href="#">our company</a>
-        </li>
+          <a class="nav__link" href="#">locations</a>
+        </li class="nav__item-mobile">
         <li>
-          <a href="#">locations</a>
-        </li>
-        <li>
-          <a href="#">contact</a>
-        </li>
+          <a class="nav__link" href="#">contact</a>
+        </li class="nav__item-mobile">
       </ul>
     </nav>
 
     <div class="overlay" data-visible="false"></div>
 
-    <main>
+    <main class="main">
 
-      <div class="hero-container" data-visible="true">
-        <div class="hero-content">
+      <section class="hero" data-visible="true">
 
-          <div class="hero-text">
-            <h1>Award-winning custom designs and digital branding solutions</h1>
-            <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
-            <button class="more-btn">learn more</button>
-          </div>
+            <h1 class="hero__head">Award-winning custom designs and digital branding solutions</h1>
+            <p class="hero__text paragraph">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
+            <button class="hero__btn btn">learn more</button>
 
-        </div>
-      </div>
+      </section>
 
-      <div class="project-navigation">
+      <section class="nav-portfolio">
 
-        <div tabindex="0" class="web-design">
-          <h2>web design</h2>
-          <p>view projects<span class="arrow"><img src="../../shared-assets/desktop/icon-right-arrow.svg" alt=""></span></p>
-        </div>
-
-          <div tabindex="0" class="app-design">
-            <h2>app design</h2>
-            <p>view projects<span class="arrow"><img src="../../shared-assets/desktop/icon-right-arrow.svg" alt=""></span></p>
-          </div>
-
-        <div tabindex="0" class="graphic-design">
-          <h2>graphic design</h2>
-          <p>view projects<span class="arrow"><img src="../../shared-assets/desktop/icon-right-arrow.svg" alt=""></span></p>
+        <div tabindex="0" class="nav-portfolio__content">
+          <h2 class="nav-portfolio__head">web design</h2>
+          <p class="nav-portfolio__text">view projects
+            <span class="nav-portfolio__img">
+              <img src="../../shared-assets/desktop/icon-right-arrow.svg" alt="">
+            </span>
+          </p>
         </div>
 
-      </div>
-      <div class="illustration-wrapper">
-
-        <div class="illustration-component-container">
-          <div class="illustration ill-one--bg">
-            <img src="./assets/desktop/illustration-passionate.svg" alt="illustration of a happy person working at their desk with a tablet and a beverage">
+          <div tabindex="0" class="nav-portfolio__content">
+            <h2 class="nav-portfolio__head">app design</h2>
+            <p class="nav-portfolio__text">view projects
+              <span class="nav-portfolio__img">
+                <img src="../../shared-assets/desktop/icon-right-arrow.svg"
+                alt="">
+              </span>
+            </p>
           </div>
 
-          <div class="illustration-text">
-            <h2>passionate</h2>
-            <p>Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.</p>
-          </div>
+        <div tabindex="0" class="nav-portfolio__content">
+          <h2 class="nav-portfolio__head">graphic design</h2>
+          <p class="nav-portfolio__text">view projects
+            <span class="nav-portfolio__img">
+              <img src="../../shared-assets/desktop/icon-right-arrow.svg" alt="">
+            </span>
+          </p>
+        </div>
+
+      </section>
+
+      <section class="illustrations">
+
+        <div class="illustrations__component">
+
+            <img class="illustrations__img" src="./assets/desktop/illustration-passionate.svg" alt="illustration of a happy person working at their desk with a tablet and a beverage">
+
+            <h2 class="illustrations__head">passionate</h2>
+            <p class="illustrations__text">Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.</p>
+
         </div>
 
         <div class="illustration-component-container">
@@ -125,7 +135,7 @@
           </div>
         </div>
 
-      </div>
+      </section>
 
       <div class="landing-contact--wrapper">
         <div class="landing-contact--text">
@@ -138,7 +148,7 @@
       </div>
 
     </main>
-  </div>
+  <!-- </div> -->
 
   <footer>
     <div class="wrapper footer-wrapper">
