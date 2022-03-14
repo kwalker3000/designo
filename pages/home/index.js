@@ -5,8 +5,8 @@ function handleMenuToggle(e) {
 	
 	
 	const main = document.querySelector('.main')
-    const overlay = document.querySelector('.overlay')
-	const navMobile = document.querySelector('.nav_mobile')
+    const overlay = document.querySelector('.page__overlay')
+	const navMobile = document.querySelector('.header__nav_mobile')
 
     const windowWidth = window.innerWidth;
     const isButton = e.target.localName === 'button'
