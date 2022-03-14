@@ -13,12 +13,12 @@
   
   <title>Designo Agency | Home</title>
 </head>
-<body class="page">
+<body class="page page_extended-border">
   
   <!-- <div class="wrapper"> -->
     <!-- <div class="leaf leaf-top"></div> -->
   <div class="leaf leaf-bottom"></div>
-  <header class="header extension">
+  <header class="header page__header extension">
 
       <img class="header__logo logo" src="../../shared-assets/desktop/logo-dark.png" alt="company-logo">
 
@@ -60,7 +60,7 @@
 
   <div class="overlay" data-visible="false"></div>
 
-  <main class="main">
+  <main class="main page__main">
 
     <section class="hero" data-visible="true">
 
@@ -70,7 +70,9 @@
           <p class="hero__text paragraph">
             With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.
           </p>
-          <button class="hero__btn btn">learn more</button>
+          <button class="hero__btn btn">
+            <span class="btn__text btn__text_hero">learn more</span>
+          </button>
 
     </section>
 
@@ -145,17 +147,21 @@
 
   </main>
 
-  <section class="cta">
+  <section class="cta page__cta">
 
-    <h2 class="cta__head">Let's talk about your project</h2>
-    <p class="cta__text paragraph">
+    <!-- <img class="cta__img" src="../../shared-assets/desktop/bg-pattern-call-to-action.svg" alt=""> -->
+
+    <h2 class="cta__head cta__item">Let's talk about your project</h2>
+    <p class="cta__text paragraph cta__item">
       Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
     </p>
-    <button class="cta__btn btn">Get in touch</button>
+    <button class="cta__btn btn cta__item">
+      <span class="btn__text btn__text_cta">Get in touch</span>
+    </button>
 
   </section>
 
-  <footer class="footer extension">
+  <footer class="footer page__footer extension">
       
     <img class="footer__logo logo" src="../../shared-assets/desktop/logo-light.png" alt="company logo">
 
@@ -180,13 +186,13 @@
     <div class="footer__contact">
 
       <p class="contact__text">
-        <span class="contact__text_subtitle">Designo Central Office</span>
+        <span class="contact__title">Designo Central Office</span>
         <br>3886 Wellington Street
         <br>Toronto, Ontario M9C 3J5
       </p>
 
       <p class="contact__text">
-        <span class="contact__text_subtitle">Contact Us (Central Office)</span>
+        <span class="contact__title">Contact Us (Central Office)</span>
         <br>P : +1 253-863-8967
         <br>M : contact@designo.co
       </p>
