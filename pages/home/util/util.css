@@ -1,0 +1,10 @@
+.extension {
+    padding-left: 100vw;
+    padding-right: 100vw;
+    margin-left: -100vw;
+    margin-right: -100vw;
+}
+
+.sr-only {
+    visibility: hidden;
+}

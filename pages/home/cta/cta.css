@@ -24,35 +24,15 @@
     margin: 0;
 }
 
-.cta-head {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.125em;
-}
+
 
 .cta__body {
     grid-column: 2 / 5;
     margin: 1em 0 2em;
 }
 
-.cta-body {
-    font-size: 0.9375rem;
-    line-height: 1.667em;
-}
 
 .cta__btn {
     grid-column: 3 / 4;
 }
 
-@media (min-width: 690px) {
-
-    .cta-head {
-        font-size: 2.5rem;
-        line-height: 1em;
-    }
-
-    .cta-body {
-        font-size: 1rem;
-        line-height: 1.625em;
-    }
-}
