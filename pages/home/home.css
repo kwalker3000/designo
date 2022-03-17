@@ -4,10 +4,244 @@
 @import url("./cta/cta.css");
 @import url("./head/head_level_2.css");
 @import url("./link/link.css");
-@import url("./paragraph/parapraph.css");
+@import url("./paragraph/paragraph.css");
 @import url("./nav/nav.css");
 @import url("./logo/logo.css");
 @import url("./util/util.css");
 @import url("./footer/footer.css");
 @import url("./footer/contact/contact.css");
 @import url("./footer/social/social.css");
+
+
+.main {
+    display: grid;
+    grid-template: repeat(3, auto 4em) / 1.5rem 1fr 1.5rem;
+
+    grid-template-areas:
+      "hero hero hero"
+      ". . ."
+      ". port ."
+      ". . ."
+      ". ill ."
+      ". . .";
+}
+
+.main__hero {
+    height: 843px;
+    grid-area: hero;
+}
+
+.main__nav-portfolio {
+    grid-area: port;
+}
+
+.main__illustrations {
+    grid-area: ill;
+}
+
+.hero {
+    background-color: #E7816B;
+    color: #FFF;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__head {
+    margin: 4.5rem 1.5rem 0;
+    max-width: 475px;
+}
+
+.hero__body {
+    margin: 1.5em 1.5rem 2em;
+    max-width: 475px;
+}
+
+.head_level-1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.125em;
+}
+
+.hero__img {
+    position: absolute;
+    bottom: -45%;;
+}
+
+@media (min-width: 690px) {
+
+    .main {
+        grid-template: repeat(3, auto 4em) / 2.5rem 1fr 2.5rem;
+        grid-template-areas:
+            ". hero ."
+            ". . ."
+            ". port ."
+            ". . ."
+            ". ill ."
+            ". . .";
+    }
+
+    .hero {
+        border-radius: 15px;
+        
+    }
+
+    .head_level-1 {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .hero {
+        height: 640px;
+        padding-left: 6rem;
+        text-align: left;
+
+        place-items: flex-start;
+        justify-content: center;
+        
+    }
+    
+    .hero__head {
+        margin-left: 0;
+    }
+
+    .hero__body {
+        margin: 2.5em 0 3em;
+    }
+
+
+    .hero__head {
+        margin-top: 0;
+    }
+
+    .hero__img {
+        bottom: -39%;
+        right: -4.6%;
+    }
+}
+
+.nav-portfolio {
+    display: grid;
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 1.5rem;
+}
+
+.nav-portfolio__content {
+    border-radius: 15px;
+    color: #FFF;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-portfolio__head {
+    margin: 0;
+}
+
+.head_level-2_tall {
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 1.286em;
+    text-transform: uppercase;
+}
+
+.paragraph_tall {
+    font-weight: 500;
+    letter-spacing: 0.333em;
+    text-transform: uppercase;
+}
+
+.bg-photo {
+    background-blend-mode: overlay;
+    background-color: hsla(0, 0%, 10%, .85);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-photo_active:hover,
+.bg-photo_active:focus {
+    background-blend-mode: soft-light;
+    background-color: #B15A47;
+    opacity: .75;
+}
+
+.photo-web {
+    background-image: url("../../shared-assets/mobile/image-web-design.jpg");
+}
+
+.photo-app {
+    background-image: url("../../shared-assets/mobile/image-app-design.jpg");
+}
+
+.photo-graph {
+    background-image: url("../../shared-assets/mobile/image-graphic-design.jpg");
+}
+
+@media (min-width: 690px) {
+
+    .nav-portfolio {
+        grid-template-rows: repeat(3, 200px)
+    }
+
+    .head_level-2_tall {
+        font-size: 2.5rem;
+        letter-spacing: 0.05em;
+        line-height: 1.2em; 
+    }
+
+    
+
+    .photo-web {
+        background-image: url("../../shared-assets/tablet/image-web-design.jpg");
+    }
+    
+    .photo-app {
+        background-image: url("../../shared-assets/tablet/image-app-design.jpg");
+    }
+    
+    .photo-graph {
+        background-image: url("../../shared-assets/tablet/image-graphic-design.jpg");
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .nav-portfolio {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        height: 640px;
+    }
+
+    /* .nav-portfolio__content {
+        height: 308px;
+    } */
+
+    .photo-web {
+        background-image: url("../../shared-assets/desktop/image-web-design-large.jpg");
+    }
+    
+    .photo-app {
+        background-image: url("../../shared-assets/desktop/image-app-design.jpg");
+    }
+    
+    .photo-graph {
+        background-image: url("../../shared-assets/desktop/image-graphic-design.jpg");
+    }
+
+    .col1 {
+        grid-row: 1 / 3;
+        grid-column: 1;
+    }
+    
+}

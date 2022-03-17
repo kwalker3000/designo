@@ -1,0 +1,165 @@
+@import url("./page/page.css");
+@import url("./header/header.css");
+@import url("./button/button.css");
+@import url("./cta/cta.css");
+@import url("./head/head_level_2.css");
+@import url("./link/link.css");
+@import url("./paragraph/paragraph.css");
+@import url("./nav/nav.css");
+@import url("./logo/logo.css");
+@import url("./util/util.css");
+@import url("./footer/footer.css");
+@import url("./footer/contact/contact.css");
+@import url("./footer/social/social.css");
+
+
+.main {
+    display: grid;
+    grid-template: repeat(3, auto 4em) / 1.5rem 1fr 1.5rem;
+
+    grid-template-areas:
+      "hero hero hero"
+      ". . ."
+      ". port ."
+      ". . ."
+      ". ill ."
+      ". . .";
+}
+
+.main__hero {
+    height: 843px;
+    grid-area: hero;
+}
+
+.main__nav-portfolio {
+    grid-area: port;
+}
+
+.main__illustrations {
+    grid-area: ill;
+}
+
+.hero {
+    background-color: #E7816B;
+    color: #FFF;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__head {
+    margin: 4.5rem 1.5rem 0;
+    max-width: 475px;
+}
+
+.hero__body {
+    margin: 1.5em 1.5rem 2em;
+    max-width: 475px;
+}
+
+.head_level_1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.125em;
+}
+
+.hero__img {
+    position: absolute;
+    bottom: -45%;;
+}
+
+@media (min-width: 690px) {
+
+    .main {
+        grid-template: repeat(3, auto 4em) / 2.5rem 1fr 2.5rem;
+        grid-template-areas:
+            ". hero ."
+            ". . ."
+            ". port ."
+            ". . ."
+            ". ill ."
+            ". . .";
+    }
+
+    .hero {
+        border-radius: 15px;
+        padding-left: 6rem;
+    }
+
+    .head_level_1 {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .hero {
+        text-align: left;
+        place-items: flex-start;
+        justify-content: center;
+        height: 640px;
+    }
+    
+    .hero__head {
+        margin-left: 0;
+    }
+
+    .hero__body {
+        margin: 2.5em 0 3em;
+    }
+
+
+    .hero__head {
+        margin-top: 0;
+    }
+
+    .hero__img {
+        bottom: -39%;
+        right: -4.6%;
+    }
+}cat >> + /home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/index.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/template.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/discardME.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/cta/cta.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/button/button.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/header/header.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/footer/footer.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/footer/contact/contact.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/footer/social/social.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/nav/nav.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/page/page.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/link/link.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/logo/logo.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/head/head_level_2.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/paragraph/paragraph.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/util/util.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/home.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/testDeleteMe/test.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/testDeleteMe/home.css
+cat >>
+cat >>
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/index.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/template.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/discardME.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/cta/cta.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/button/button.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/header/header.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/footer/footer.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/footer/contact/contact.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/footer/social/social.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/nav/nav.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/page/page.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/link/link.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/logo/logo.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/head/head_level_2.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/paragraph/paragraph.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/util/util.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/home.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/testDeleteMe/test.css
+/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/home/testDeleteMe/home.css

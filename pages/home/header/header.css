@@ -47,7 +47,7 @@
     }
 
     .header__nav_mobile--expanded[data-visible="true"] {
-        transform: translateY(6em);
+        transform: translateY(90px);
         transition: transform 450ms ease-in;
     }
     
