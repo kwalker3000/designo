@@ -15,7 +15,7 @@
 
 .main {
     display: grid;
-    grid-template: repeat(3, auto 4em) / 1.5rem 1fr 1.5rem;
+    grid-template: repeat(2, auto 8rem) auto 4rem / 1.5rem 1fr 1.5rem;
 
     grid-template-areas:
       "hero hero hero"
@@ -76,7 +76,7 @@
 @media (min-width: 690px) {
 
     .main {
-        grid-template: repeat(3, auto 4em) / 2.5rem 1fr 2.5rem;
+        grid-template-columns: 2.5rem 1fr 2.5rem;
         grid-template-areas:
             ". hero ."
             ". . ."
@@ -157,17 +157,14 @@
     text-transform: uppercase;
 }
 
-.paragraph_tall {
-    font-weight: 500;
-    letter-spacing: 0.333em;
-    text-transform: uppercase;
-}
-
 .bg-photo {
-    background-blend-mode: overlay;
-    background-color: hsla(0, 0%, 10%, .85);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.photo-overlay {
+    background-blend-mode: overlay;
+    background-color: hsla(0, 0%, 10%, .85); 
 }
 
 .bg-photo_active:hover,
@@ -188,6 +185,8 @@
 .photo-graph {
     background-image: url("../../shared-assets/mobile/image-graphic-design.jpg");
 }
+
+
 
 @media (min-width: 690px) {
 
@@ -244,4 +243,78 @@
         grid-column: 1;
     }
     
+}
+
+.illustrations {
+    color: #333136;
+    text-align: center;
+}
+
+.illustrations__component {
+    margin-bottom: 4rem; 
+}
+
+.illustrations__head {
+    margin: 1.5em 0;
+}
+
+
+.circle {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle.svg");
+}
+
+.circle-up {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-up.svg");
+}
+
+.circle-down {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-down.svg");
+}
+
+.head_level-2_short {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 690px) {
+
+    .illustrations {
+        text-align: left;
+    }
+
+    .illustrations__component {
+        display: inline-block;
+    }
+
+    .illustrations__img {
+        float: inline-start;
+        margin-right: 3rem;
+    }
+
+    .illustrations__head {
+        margin: 2em 0 1em;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .illustrations {
+        text-align: center;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .illustrations__img {
+        float: initial;
+        margin-right: 0;
+    }
+
+    .illustrations__component {
+        width: calc(95% / 3);
+    }
+
 }

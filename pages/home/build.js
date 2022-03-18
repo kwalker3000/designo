@@ -1,4 +1,4 @@
-// fs = require('fs');
+fs = require('fs');
 
 // fs.readdir(process.cwd(), function (err, files) {
 //   if (err) {
@@ -53,3 +53,43 @@ finder.on('file', function (file, stat) {
 // finder.on('link', function (link, stat) {
 //     console.log(link);
 // });
+
+// var data = fs.readFileSync('index.html');
+// console.log("Synchronous read: " + data);
+
+// console.log("Program Ended");
+
+//(?<=class=")[\w\d\W]*(?=")
+
+const allFileContents = fs.readFileSync('index.html', 'utf-8');
+const regex = /(?<=class=")([\w\d\W]+?)\"|\w$/;
+let linesArray = []
+let classes = []
+
+
+allFileContents.split(/\r?\n/).forEach(line =>  {
+  linesArray.push(line);
+});
+
+for (let line of linesArray) {
+  if (regex.test(line)) {
+    let match = line.match(regex)[1]
+    let classGroup = match === undefined ? undefined : match.split(' ')
+    if (classGroup) {
+      for (let name of classGroup) {
+        if (!(classes.includes(name))) {
+          classes.push(name + ".css")
+        }
+      }
+      
+      //console.log(typeof match)
+    }
+  }
+  
+}
+console.log(classes)
+
+
+
+const used = process.memoryUsage().heapUsed / 1024 / 1024;
+console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`)
