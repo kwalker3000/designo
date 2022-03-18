@@ -1,0 +1,52 @@
+.illustrations {
+    color: #333136;
+    text-align: center;
+}
+
+.illustrations__component {
+    margin-bottom: 4rem; 
+}
+
+.illustrations__head {
+    margin: 1.5em 0;
+}
+
+@media (min-width: 690px) {
+
+    .illustrations {
+        text-align: left;
+    }
+
+    .illustrations__component {
+        display: inline-block;
+    }
+
+    .illustrations__img {
+        float: inline-start;
+        margin-right: 3rem;
+    }
+
+    .illustrations__head {
+        margin: 2em 0 1em;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .illustrations {
+        text-align: center;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .illustrations__img {
+        float: initial;
+        margin-right: 0;
+    }
+
+    .illustrations__component {
+        width: calc(95% / 3);
+    }
+
+}

@@ -27,14 +27,6 @@
     margin: 1.5em 1em 2em;
 }
 
-@media (min-width: 690px) {
-
-    .cta {
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
-}
-
 @media (min-width: 1120px) {
 
     .cta {
@@ -56,9 +48,5 @@
     .cta__body {
         margin: 1.5em 0 0;
     }
-
-    /* .cta__btn {
-        margin-left: 5rem;
-    } */
 
 }

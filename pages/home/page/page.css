@@ -12,8 +12,7 @@ html,
     margin: 0 auto;
 	overflow-x: hidden;
     display: grid;
-    /* grid-template: repeat(2, auto) repeat(2, calc(333px / 2)) auto / minmax(0px, 1.5rem) 1fr minmax(0px, 1.5rem); */
-
+    
     grid-template: repeat(2, auto) repeat(2, calc(333px / 2)) auto / 1.5rem 1fr 1.5rem;
 }
 
@@ -76,5 +75,13 @@ html,
         margin-top: 5.35rem;
         padding-top: calc((333px / 2));
         padding-bottom: 5.35rem;
+    }
+}
+
+@media (min-width: 690px) {
+
+    .page__cta {
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 }
