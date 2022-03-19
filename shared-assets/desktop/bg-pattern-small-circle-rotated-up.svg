@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="202"
+   height="202"
+   version="1.1"
+   id="svg11"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7">
+    <linearGradient
+       id="a"
+       x1="0"
+       x2="202"
+       y1="101"
+       y2="101"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.26813582,-0.26884957)">
+      <stop
+         offset="0%"
+         stop-color="#5D0202"
+         stop-opacity="0"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#5D0202"
+         stop-opacity=".498"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <circle
+     cx="101.26814"
+     cy="100.73115"
+     r="101"
+     fill="url(#a)"
+     fill-rule="evenodd"
+     opacity="0.203"
+     transform="matrix(0.00265834,0.99999647,0.99999647,-0.00265834,0,0)"
+     id="circle9"
+     style="fill:url(#a)" />
+</svg>

@@ -1,0 +1,370 @@
+/* - Table of Contents
+
+-- Layout
+-- Display Props
+-- Typography
+-- Box Props
+-- Color & Imgs
+-- Misc               */
+
+
+/*  --------- Sub Grid Layout ----------- */
+
+.secondary-grid {
+    display: grid;
+    grid-template: repeat(2, auto) 4em auto 7em auto 4em / 1.5em 1fr 1.5em;
+    grid-template-areas:
+      "sec1 sec1 sec1"
+      "sec2 sec2 sec2"
+      ". . ."
+      "sec3 sec3 sec3"
+      ". . ."
+      "sec4 sec4 sec4"
+      ". . .";
+
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+@media (min-width: 690px) {
+    
+    .secondary-grid {
+        grid-template-rows: auto 6em auto 6em auto 9em auto 6em;
+
+        grid-template-areas:
+            ". sec1 ."
+            ". . ."
+            ". sec2 ."
+            ". . ."
+            ". sec3 ."
+            ". . ."
+            ". sec4 ."
+            ". . .";
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .secondary-grid {
+        grid-template-rows: auto 8em auto 8em auto 11em auto 8em;
+    }
+}
+
+.sec1 {
+    grid-area: sec1;
+}
+
+.sec2 {
+    grid-area: sec2;
+}
+
+.sec3 {
+    grid-area: sec3;
+}
+
+.sec4 {
+    grid-area: sec4;
+}
+
+/* || Display Props */
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1120px) {
+
+    section {
+        flex-direction: row;
+    }
+
+    .sec1 > div,
+    .sec2 > div,
+    .sec4 > div {
+        align-self: center;
+    }
+
+    .sec1 > div,
+    .sec4 > div {
+        order: -1;
+    }
+
+    .sec3 {
+        justify-content: space-around;
+    }
+}
+
+/*  || Typography */
+
+section {
+    text-align: center;
+}
+
+h1,
+h2,
+.location > p,
+.location > button {
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    line-height: 1.09em;
+}
+
+.p-font,
+.location > button {
+    font-size: .9375rem;
+}
+
+button,
+.upper {
+    text-transform: uppercase;
+}
+
+.p-font {
+    line-height: 1.667em;
+}
+
+.location > p {
+    font-size: 1.25rem;
+    letter-spacing: .25em;
+    line-height: 1.3em;
+}
+
+@media (min-width: 690px) {
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 1.2em;
+    }
+
+    .p-font {
+        font-size: 1rem;
+        line-height: 1.625em;
+    }
+}
+
+@media (min-width: 1120px) {
+    
+    .sec1,
+    .sec2,
+    .sec4 {
+        text-align: left;
+    }
+}
+
+/* || Box Props */
+
+.sec1 > div,
+.sec2 > div,
+.sec4 > div {
+    padding: 5em 0 5em;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+.sec3 > div > img {
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+.p-font {
+    margin: 0 1.5em;
+}
+
+.location > button {
+    padding: 1em 1.37em;
+}
+
+.gap {
+    margin-bottom: 1.5em;
+}
+
+@media (min-width: 690px) {
+
+    .sec1,
+    .sec2,
+    .sec4 {
+        border-radius: 15px;
+    }
+
+    .sec1 > img,
+    .sec2 > img,
+    .sec4 > img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .p-font {
+        margin-left: 4.5em;
+        margin-right: 4.5em;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .sec1 > div,
+    .sec2 > div,
+    .sec4 > div {
+        padding: 0;
+    }
+
+    .sec2 > div h2,
+    .sec4 > div h2 {
+        margin-left: 1.8em;
+    }
+    
+    .sec1 > img,
+    .sec4 > img {
+        border-radius: 0 15px 15px 0;
+    }
+
+    .sec1 > div h1 {
+        margin-left: 1.5em;
+    }
+
+    .sec2 > img {
+        border-radius: 15px 0 0 15px;
+    }
+}
+
+/* || Color Palette */
+
+body {
+    color: #333136;
+}
+
+.sec1,
+.location > button {
+    background-color: #E7816B;
+    color: #FFF;
+}
+
+.sec2,
+.sec4 {
+    background-color: #FDF3F0;
+}
+
+.sec2 > div,
+.sec4 > div {
+    background-image: url("../../shared-assets/desktop/bg-pattern-three-circles.svg");
+}
+
+.location > button:hover,
+.location > button:focus {
+    background-color: #FFAD9B;
+}
+
+section h2 { 
+    color: #E7816B;
+}
+
+.sec1 > div {
+    background-image: url("./assets/mobile/bg-pattern-hero-about-mobile.svg");
+    background-position: 100% 26%;
+}
+
+.canada {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-down.svg");
+}
+
+.australia {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle.svg");
+}
+
+.kingdom {
+    background-image: url("../../shared-assets/desktop/bg-pattern-small-circle-rotated-up.svg")
+}
+
+@media (min-width: 690px) {
+
+    .sec1,
+    .sec2,
+    .sec4,
+    .sec1 > div,
+    .sec2 > div,
+    .sec4 > div {
+        background-repeat: no-repeat;
+    }
+    
+    .sec1 > div {
+        background-image: url("./assets/desktop/bg-pattern-hero-about-desktop.svg");
+        background-position: -140% 141%;
+    }
+
+    .sec2 > div {
+        background-position: 80% 147%;
+    }
+
+    .sec4 > div {
+        background-position: 80% 120%
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .sec1 > div,
+    .sec2 > div,
+    .sec4 > div {
+        background-image: none;
+    }
+
+    .sec1 {
+        background-image: url("./assets/desktop/bg-pattern-hero-about-desktop.svg");
+        background-position: -3% 100%;
+    }
+
+    .sec2 {
+        background-image: url("../../shared-assets/desktop/bg-pattern-three-circles.svg");
+        background-position: 60% 100%;
+    }
+
+    .sec4 {
+        background-image: url("../../shared-assets/desktop/bg-pattern-two-circles.svg");
+        background-position: 0% 100%;
+    }
+}
+
+/* ------- Responsive Image Change ------ */
+
+.tablet-img,
+.desktop-img {
+    display: none;
+}
+
+@media (min-width: 690px) {
+
+    .mobile-img {
+        display: none;
+    }
+
+    .tablet-img {
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .tablet-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+    }
+}
+
+/* || Misc  */
+
+.location > button {
+    cursor: pointer;
+}

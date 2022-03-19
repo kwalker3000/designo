@@ -1,0 +1,34 @@
+
+/* --------- Project Navigation --------- */
+
+
+.app-design {
+    background-image: url("../../shared-assets/mobile/image-app-design.jpg");
+}
+
+.graphic-design {
+    background-image: url("../../shared-assets/mobile/image-graphic-design.jpg");
+}
+
+@media (min-width: 690px) {
+
+    .app-design {
+        background-image: url("../../shared-assets/tablet/image-app-design.jpg");
+    }
+
+    .graphic-design {
+        background-image: url("../../shared-assets/tablet/image-graphic-design.jpg");
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .app-design {
+        background-image: url("../../shared-assets/desktop/image-app-design.jpg");
+    }
+
+    .graphic-design {
+        background-image: url("../../shared-assets/desktop/image-graphic-design.jpg");
+    }
+
+}

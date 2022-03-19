@@ -1,0 +1,6 @@
+.footer__social {
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+        align-self: end;
+        justify-self: right;
+    }

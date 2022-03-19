@@ -1,0 +1,9 @@
+.header__mobile-nav {
+        display: block;
+        background-color: #000;
+        height: 15%;  
+
+        position: absolute;
+        inset: 0 0 0 0;
+        z-index: 2;
+    }
