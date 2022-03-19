@@ -1,0 +1,5 @@
+.nav-portfolio__bkg-img_active {
+    background-blend-mode: soft-light;
+    background-color: #B15A47;
+    opacity: .75;
+}

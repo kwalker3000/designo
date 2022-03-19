@@ -1,56 +1,52 @@
 
-const navToggle = document.querySelector('.mobile-nav-btn')
+const headerBtn = document.querySelector('.header__btn')
 
 function handleMenuToggle(e) {
 	
-	const overlay = document.querySelector('.overlay')
-	// const heroContainer = document.querySelector('.hero-container')
-	const mainSection = document.querySelector('main')
-	const secondaryGrid = document.querySelector('.secondary-grid')
-	const primaryNav = document.querySelector('.mobile-primary-navigation')
-    const blockTab = document.querySelector('.block-tab')
+
+	const main = document.querySelector('.main')
+    const overlay = document.querySelector('.page__overlay')
+	const navMobile = document.querySelector('.header__mobile-nav')
+
     const windowWidth = window.innerWidth;
     const isButton = e.target.localName === 'button'
-    const isVisible = primaryNav.getAttribute('data-visible') === 'true'
+    const isVisible = navMobile.getAttribute('data-visible') === 'true'
+
+    const blockTab = document.querySelector('.js-only')
 	
-	mainSection.addEventListener('click', handleMenuToggle)
+	overlay.addEventListener('click', handleMenuToggle)
 
     if (!isVisible && isButton) {
-        primaryNav.setAttribute('data-visible', true)
-        navToggle.setAttribute('aria-expanded', true)
+        navMobile.setAttribute('data-visible', true)
+        headerBtn.setAttribute('aria-expanded', true)
         overlay.setAttribute('data-visible', true)
-        // heroContainer.setAttribute('data-visible', false)
 
-        secondaryGrid.style.zIndex = -3
+        main.style.zIndex = -3
         document.body.style.overflow = 'hidden'
 
         blockTab.addEventListener('keydown', handleTabEvent)
         
     }
     else if (isVisible || windowWidth >= 740) {
-        primaryNav.setAttribute('data-visible', false)
-        navToggle.setAttribute('aria-expanded', false)
+        navMobile.setAttribute('data-visible', false)
+        headerBtn.setAttribute('aria-expanded', false)
         overlay.setAttribute('data-visible', false)
-        // heroContainer.setAttribute('data-visible', true)
 
-        secondaryGrid.style.zIndex = 0
+        main.style.zIndex = 0
         document.body.style.overflow = ''
 
         blockTab.removeEventListener('keydown', handleTabEvent)
     }
 }
 
+// prevent user from tabbing past dropdown menu 
 function handleTabEvent(e) {
-    let nextPos = document.querySelector('.start')
-    console.log(e.keyCode)
     if (e.keyCode == 9) {
-        nextPos.focus()
+        headerBtn.focus()
     }
 }
 
-navToggle.addEventListener('click', handleMenuToggle)
+headerBtn.addEventListener('click', handleMenuToggle)
 
 
 window.addEventListener('resize', handleMenuToggle)
-
-console.log('file fyeya')
