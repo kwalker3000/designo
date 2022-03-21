@@ -167,7 +167,7 @@ html {
 
   grid-template: repeat(2, auto) repeat(2, calc(333px / 2)) auto / 1.5rem 1fr 1.5rem;
 
-  position: relative;
+  
 }
 .paragraph_sm {
   font-size: 0.9375rem;
@@ -595,8 +595,13 @@ background-attachment: initial;
 }
 }
 
+.img_leaf {
+  display: none;
+}
+
 @media (min-width: 1120px) {
 .img_leaf {
+display: block;
 position: absolute;
 z-index: -1;
 /* overflow: hidden; */
@@ -610,4 +615,11 @@ inset: 16% 0% 0 -11%;
 inset: 61.5% 0 0 26%;
 transform: rotate(180deg);
 }
+}
+
+@media (min-width: 1120px) {
+
+  .page {
+    position: relative;
+  }
 }
