@@ -1,6 +1,6 @@
  
 .img_leaf {
-            position: absolute;
-            z-index: -1;
-            /* overflow: hidden; */
-        }
+    display: block;
+    position: absolute;
+    z-index: -1;
+ }
