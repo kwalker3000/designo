@@ -1,8 +1,8 @@
 .hero {
-        height: 640px;
-        padding-left: 6rem;
-        text-align: left;
+    height: 640px;
+    padding-left: 6rem;
+    text-align: left;
 
-        place-items: flex-start;
-        justify-content: center; 
-    }
+    place-items: flex-start;
+    justify-content: center;
+}

@@ -5,15 +5,15 @@
     display: grid;
     grid-template: repeat(3, 4fr 5fr 3em) / 1.5em 1fr 1.5em;
     grid-template-areas:
-      "mp1 mp1 mp1"
-      "cd1 cd1 cd1"
-      ". . ."
-      "mp2 mp2 mp2"
-      "cd2 cd2 cd2"
-      ". . ."
-      "mp3 mp3 mp3"
-      "cd3 cd3 cd3"
-      ". . .";
+        "mp1 mp1 mp1"
+        "cd1 cd1 cd1"
+        ". . ."
+        "mp2 mp2 mp2"
+        "cd2 cd2 cd2"
+        ". . ."
+        "mp3 mp3 mp3"
+        "cd3 cd3 cd3"
+        ". . .";
 }
 
 .sc-grid__map_pos--1 {
@@ -41,50 +41,47 @@
 }
 
 @media (min-width: 690px) {
-    
     .secondary-grid {
         grid-row-gap: 1.5em;
         grid-template-rows: repeat(3, 1fr 1fr 6em);
         grid-template-areas:
-      ". mp1 ."
-      ". cd1 ."
-      ". . ."
-      ". mp2 ."
-      ". cd2 ."
-      ". . ."
-      ". mp3 ."
-      ". cd3 ."
-      ". . .";
+            ". mp1 ."
+            ". cd1 ."
+            ". . ."
+            ". mp2 ."
+            ". cd2 ."
+            ". . ."
+            ". mp3 ."
+            ". cd3 ."
+            ". . .";
     }
 }
 
 @media (min-width: 1120px) {
-
     .secondary-grid {
         grid-template: repeat(3, auto) 6em / 0px 1fr 1fr 1fr 0px;
         grid-template-areas:
-          ". cd1 cd1 mp1 ."
-          ". mp2 cd2 cd2 ."
-          ". cd3 cd3 mp3 ."
-          ". . . . .";
+            ". cd1 cd1 mp1 ."
+            ". mp2 cd2 cd2 ."
+            ". cd3 cd3 mp3 ."
+            ". . . . .";
         grid-gap: 1.5em;
     }
 }
 
-
-.map { 
+.map {
     height: auto;
-    min-width: 100%; 
+    min-width: 100%;
 }
 
 .card {
-    background-color: #FDF3F0;
+    background-color: #fdf3f0;
     padding: 5em 0;
     text-align: center;
 }
 
 .card__head {
-    color: #E7816B;
+    color: #e7816b;
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.125em;
@@ -103,7 +100,6 @@
 }
 
 @media (min-width: 690px) {
-
     .map,
     .card {
         border-radius: 15px;
@@ -135,4 +131,3 @@
         grid-column: 4 / 5;
     }
 }
-

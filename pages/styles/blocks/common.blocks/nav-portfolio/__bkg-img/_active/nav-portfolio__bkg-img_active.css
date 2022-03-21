@@ -1,5 +1,6 @@
-.nav-portfolio__bkg-img_active {
+.link:hover > .nav-portfolio__bkg-img_active,
+.link:focus > .nav-portfolio__bkg-img_active {
     background-blend-mode: soft-light;
-    background-color: #B15A47;
-    opacity: .75;
+    background-color: #b15a47;
+    opacity: 0.75;
 }

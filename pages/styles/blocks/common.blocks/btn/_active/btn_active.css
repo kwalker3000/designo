@@ -1,3 +1,4 @@
-.btn_active {
-    cursor: pointer;  
+.btn_active:hover,
+.btn_active:focus {
+    cursor: pointer;
 }

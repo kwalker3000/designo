@@ -1,5 +1,4 @@
- 
 .leaf-img_bottom {
-            inset: 61.5% 0 0 26%;
-            transform: rotate(180deg);
-        }
+    inset: 61.5% 0 0 26%;
+    transform: rotate(180deg);
+}

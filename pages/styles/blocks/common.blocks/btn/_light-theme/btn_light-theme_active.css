@@ -1,4 +1,5 @@
-.btn_light-theme_active {
-    color: #FFF;
-    background-color: #FFAD9B;
+.btn_light-theme_active:hover,
+.btn_light-theme_active:focus {
+    color: #fff;
+    background-color: #ffad9b;
 }

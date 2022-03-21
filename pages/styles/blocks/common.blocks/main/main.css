@@ -3,10 +3,10 @@
     grid-template: repeat(2, auto 8rem) auto 4rem / 1.5rem 1fr 1.5rem;
 
     grid-template-areas:
-      "hero hero hero"
-      ". . ."
-      ". port ."
-      ". . ."
-      ". ill ."
-      ". . .";
+        "hero hero hero"
+        ". . ."
+        ". port ."
+        ". . ."
+        ". ill ."
+        ". . .";
 }

@@ -1,4 +1,4 @@
 .nav__link {
-        /* fix text-decoration not working at resolutions 635px - 683px */
-        vertical-align: middle; 
-    }
+    /* fix text-decoration not working at resolutions 635px - 683px */
+    vertical-align: middle;
+}
