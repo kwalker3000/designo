@@ -1,0 +1,6 @@
+@media (min-width: 690px) {
+    .card__text {
+        border-radius: 0 15px 15px 0;
+        justify-content: center;
+    }
+}

@@ -1,9 +1,11 @@
-.header__mobile-nav_expanded[data-visible="true"] {
-    transform: translateY(90px);
-    transition: transform 450ms ease-in;
-}
+@media (max-width: 689px) {
+    .header__mobile-nav_expanded[data-visible="true"] {
+        transform: translateY(90px);
+        transition: transform 450ms ease-in;
+    }
 
-.header__mobile-nav_expanded[data-visible="false"] {
-    transform: translateY(-100%);
-    transition: transform 450ms ease-out;
+    .header__mobile-nav_expanded[data-visible="false"] {
+        transform: translateY(-100%);
+        transition: transform 450ms ease-out;
+    }
 }

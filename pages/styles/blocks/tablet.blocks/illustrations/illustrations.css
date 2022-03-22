@@ -1,3 +1,5 @@
-.illustrations {
-    text-align: left;
+@media (min-width: 690px) {
+    .illustrations {
+        text-align: left;
+    }
 }

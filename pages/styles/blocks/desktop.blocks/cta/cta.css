@@ -1,7 +1,9 @@
-.cta {
-    text-align: left;
+@media (min-width: 1120px) {
+    .cta {
+        text-align: left;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

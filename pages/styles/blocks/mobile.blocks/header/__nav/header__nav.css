@@ -1,3 +1,5 @@
-.header__nav {
-    display: none;
+@media (max-width: 689px) {
+    .header__nav {
+        display: none;
+    }
 }

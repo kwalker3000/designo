@@ -1,3 +1,5 @@
-.footer__contact {
-    margin: 2.5em 0em 0em;
+@media (max-width: 689px) {
+    .footer__contact {
+        margin: 2.5em 0em 0em;
+    }
 }

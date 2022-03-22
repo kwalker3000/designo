@@ -1,10 +1,12 @@
-.main {
-    grid-template-columns: 2.5rem 1fr 2.5rem;
-    grid-template-areas:
-        ". hero ."
-        ". . ."
-        ". port ."
-        ". . ."
-        ". ill ."
-        ". . .";
+@media (min-width: 690px) {
+    .main {
+        grid-template-columns: 2.5rem 1fr 2.5rem;
+        grid-template-areas:
+            ". hero ."
+            ". . ."
+            ". port ."
+            ". . ."
+            ". ill ."
+            ". . .";
+    }
 }

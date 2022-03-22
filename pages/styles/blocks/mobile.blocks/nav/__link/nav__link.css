@@ -1,4 +1,6 @@
-.nav__link {
-    /* fix text-decoration not working at resolutions 635px - 683px */
-    vertical-align: middle;
+@media (max-width: 689px) {
+    .nav__link {
+        /* fix text-decoration not working at resolutions 635px - 683px */
+        vertical-align: middle;
+    }
 }

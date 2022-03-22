@@ -1,3 +1,5 @@
-.footer__social-svg {
-    vertical-align: bottom;
+@media (min-width: 690px) {
+    .footer__social-svg {
+        vertical-align: bottom;
+    }
 }

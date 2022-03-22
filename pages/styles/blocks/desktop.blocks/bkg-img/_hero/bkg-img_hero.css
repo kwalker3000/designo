@@ -1,5 +1,7 @@
-.bkg-img_hero {
-    background-position-x: right;
-    background-position-y: initial;
-    background-attachment: initial;
+@media (min-width: 1120px) {
+    .bkg-img_hero {
+        background-position-x: right;
+        background-position-y: initial;
+        background-attachment: initial;
+    }
 }

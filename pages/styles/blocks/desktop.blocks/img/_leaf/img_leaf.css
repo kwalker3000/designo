@@ -1,5 +1,7 @@
-.img_leaf {
-    display: block;
-    position: absolute;
-    z-index: -1;
+@media (min-width: 1120px) {
+    .img_leaf {
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
 }

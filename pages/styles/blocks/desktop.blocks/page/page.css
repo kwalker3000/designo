@@ -1,3 +1,5 @@
-.page {
-    position: relative;
+@media (min-width: 1120px) {
+    .page {
+        position: relative;
+    }
 }

@@ -1,3 +1,5 @@
-.illustrations__component {
-    width: calc(95% / 3);
+@media (min-width: 1120px) {
+    .illustrations__component {
+        width: calc(95% / 3);
+    }
 }

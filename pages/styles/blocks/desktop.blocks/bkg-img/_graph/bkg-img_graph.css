@@ -1,3 +1,5 @@
-.bkg-img_graph {
-    background-image: url("../../../shared-assets/desktop/image-graphic-design.jpg");
+@media (min-width: 1120px) {
+    .bkg-img_graph {
+        background-image: url("../../../shared-assets/desktop/image-graphic-design.jpg");
+    }
 }

@@ -1,0 +1,9 @@
+@media (min-width: 690px) {
+    .headline {
+        padding-left: 6rem;
+        text-align: left;
+
+        place-items: flex-start;
+        justify-content: center;
+    }
+}

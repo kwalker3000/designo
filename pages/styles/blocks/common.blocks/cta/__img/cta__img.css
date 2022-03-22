@@ -1,5 +1,5 @@
 .cta__img {
     position: absolute;
-    transform: translateX(4%);
+    transform: translate(-47%, -30%);
     z-index: -3;
 }

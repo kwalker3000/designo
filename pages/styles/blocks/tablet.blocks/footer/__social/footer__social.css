@@ -1,6 +1,8 @@
-.footer__social {
-    grid-row: 3 / 4;
-    grid-column: 3 / 4;
-    align-self: end;
-    justify-self: right;
+@media (min-width: 690px) {
+    .footer__social {
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+        align-self: end;
+        justify-self: right;
+    }
 }

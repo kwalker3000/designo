@@ -1,3 +1,5 @@
-.cta__container {
-    align-items: flex-start;
+@media (min-width: 1120px) {
+    .cta__container {
+        align-items: flex-start;
+    }
 }

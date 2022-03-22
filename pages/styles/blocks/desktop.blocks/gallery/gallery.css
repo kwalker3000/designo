@@ -1,0 +1,5 @@
+@media (min-width: 1120px) {
+    .gallery {
+        grid-template: auto / repeat(3, minmax(275px, 350px));
+    }
+}

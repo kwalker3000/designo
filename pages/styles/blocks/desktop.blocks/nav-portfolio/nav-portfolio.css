@@ -1,4 +1,6 @@
-.nav-portfolio {
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    height: 640px;
+@media (min-width: 1120px) {
+    .nav-portfolio {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        height: 640px;
+    }
 }

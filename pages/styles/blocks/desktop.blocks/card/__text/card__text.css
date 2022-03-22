@@ -1,0 +1,5 @@
+@media (min-width: 1120px) {
+    .card__text {
+        border-radius: 0 0 15px 15px;
+    }
+}

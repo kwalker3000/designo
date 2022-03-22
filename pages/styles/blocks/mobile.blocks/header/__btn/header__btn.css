@@ -1,11 +1,13 @@
-.header__btn {
-    background-color: white;
-    background-image: url("../../shared-assets/mobile/icon-hamburger.svg");
-    background-repeat: repeat;
-    background-size: cover;
-    border: none;
+@media (max-width: 689px) {
+    .header__btn {
+        background-color: white;
+        background-image: url("../../shared-assets/mobile/icon-hamburger.svg");
+        background-repeat: repeat;
+        background-size: cover;
+        border: none;
 
-    display: block;
-    height: 1.5em;
-    width: 1.5em;
+        display: block;
+        height: 1.5em;
+        width: 1.5em;
+    }
 }

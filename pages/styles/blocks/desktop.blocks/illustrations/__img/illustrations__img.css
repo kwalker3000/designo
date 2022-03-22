@@ -1,4 +1,6 @@
-.illustrations__img {
-    float: initial;
-    margin-right: 0;
+@media (min-width: 1120px) {
+    .illustrations__img {
+        float: initial;
+        margin-right: 0;
+    }
 }

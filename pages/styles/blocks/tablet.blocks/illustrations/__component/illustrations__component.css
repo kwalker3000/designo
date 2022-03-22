@@ -1,3 +1,5 @@
-.illustrations__component {
-    display: inline-block;
+@media (min-width: 690px) {
+    .illustrations__component {
+        display: inline-block;
+    }
 }

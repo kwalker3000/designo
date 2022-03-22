@@ -1,8 +1,10 @@
-.hero {
-    height: 640px;
-    padding-left: 6rem;
-    text-align: left;
+@media (min-width: 1120px) {
+    .hero {
+        height: 640px;
+        padding-left: 6rem;
+        text-align: left;
 
-    place-items: flex-start;
-    justify-content: center;
+        place-items: flex-start;
+        justify-content: center;
+    }
 }

@@ -1,4 +1,6 @@
-.illustrations__img {
-    float: inline-start;
-    margin-right: 3rem;
+@media (min-width: 690px) {
+    .illustrations__img {
+        float: inline-start;
+        margin-right: 3rem;
+    }
 }
