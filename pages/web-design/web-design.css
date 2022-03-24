@@ -275,11 +275,8 @@ html {
     z-index: 1;
 }
 
-.headline__img {
-    z-index: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+.bkg-img_headline {
+    background: url("../../shared-assets/mobile/bg-pattern-design-pages-intro-mobile.svg") 100% 0;
 }
 
 .headline {
@@ -291,9 +288,6 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    position: relative;
-    overflow: hidden;
 }
 
 @media (min-width: 690px) {
@@ -302,14 +296,17 @@ html {
         border-radius: 15px;
     }
 
-    .headline__img {
-        transform: translate(21%, -28%);
+    .bkg-img_headline {
+        background-image: url("../../shared-assets/tablet/bg-pattern-design-pages-intro-tablet.svg");
+        background-position: 8% 50%;
     }
 }
 
 @media (min-width: 1120px) {
-    .headline__img {
-        transform: translate(0%, -28%);
+
+    .bkg-img_headline {
+        background-image: url("./assets/desktop/bg-pattern-intro-web.svg");
+        background-position-x: 100%;
     }
 }
 
@@ -623,15 +620,16 @@ html {
 
 .bkg-img_app {
     background-image: url("../../shared-assets/mobile/image-app-design.jpg");
+    background-size: cover;
 }
 
 .bkg-img_graph {
     background-image: url("../../shared-assets/mobile/image-graphic-design.jpg");
+    background-size: cover;
 }
 
 .bkg-img {
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @media (min-width: 690px) {

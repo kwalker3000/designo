@@ -1,4 +1,4 @@
-fs = require('fs');
+let fs = require('fs');
 
 // fs.readdir(process.cwd(), function (err, files) {
 //   if (err) {
