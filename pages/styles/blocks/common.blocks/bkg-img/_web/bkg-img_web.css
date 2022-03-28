@@ -1,3 +1,4 @@
 .bkg-img_web {
     background-image: url("../../shared-assets/mobile/image-web-design.jpg");
+    background-size: cover;
 }

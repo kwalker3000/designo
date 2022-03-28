@@ -12,7 +12,7 @@ html {
 .page__cta {
     grid-row: 3 / 5;
     grid-column: 2 / -2;
-    padding: 3rem 0;
+
 
     position: relative;
     overflow: hidden;
@@ -48,7 +48,7 @@ html {
     overflow-x: hidden;
 
     display: grid;
-    grid-template: repeat(2, auto) repeat(2, calc(333px / 2)) auto / 1.5rem 1fr 1.5rem;
+    grid-template: repeat(2, auto) repeat(2, calc(379px/ 2)) auto / 1.5rem 1fr 1.5rem;
 }
 
 @media (max-width: 689px) {
@@ -215,7 +215,7 @@ html {
     background-color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 1.2em 1.8em;
+    padding: 1.44em 1.15em;
 }
 
 .main__headline {
@@ -338,6 +338,11 @@ html {
     color: #fff;
     border-radius: 15px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 1120px) {
@@ -360,8 +365,8 @@ html {
 
     .cta {
         text-align: left;
-
-        display: flex;
+	
+	flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
@@ -505,7 +510,9 @@ html {
     .header__mobile-nav {
         display: block;
         background-color: #000;
-        height: 15%;
+        height: max-content;
+        padding-bottom: 1.8rem;
+      
 
         position: absolute;
         inset: 0 0 0 0;

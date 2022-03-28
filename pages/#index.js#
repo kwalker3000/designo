@@ -25,6 +25,7 @@ function handleMenuToggle(e) {
         document.body.style.overflow = 'hidden';
 
         blockTab.addEventListener('keydown', handleTabEvent);
+	
         
     }
     else if (isVisible || windowWidth >= 740) {

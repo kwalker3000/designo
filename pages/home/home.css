@@ -265,7 +265,7 @@ html {
     background-color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 1.2em 1.8em;
+    padding: 1.44em 1.15em;;
 }
 .btn__text {
     font-size: 0.938rem;
@@ -349,7 +349,8 @@ html {
     .header__mobile-nav {
         display: block;
         background-color: #000;
-        height: 15%;
+        height: max-content;
+	padding-bottom: 1.8rem;
 
         position: absolute;
         inset: 0 0 0 0;

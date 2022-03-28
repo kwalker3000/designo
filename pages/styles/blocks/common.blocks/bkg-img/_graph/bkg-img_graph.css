@@ -1,3 +1,4 @@
 .bkg-img_graph {
     background-image: url("../../shared-assets/mobile/image-graphic-design.jpg");
+    background-size: cover;
 }
