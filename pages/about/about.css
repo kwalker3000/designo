@@ -22,19 +22,19 @@ html {
     line-height: 1.125em;
 }
 
-.head_level-2_tall {
-    font-size: 1.75rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    line-height: 1.286em;
-    text-transform: uppercase;
-}
-
 .head_level-2_short {
     font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 0.25em;
     line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+.head_level-2_tall {
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 1.286em;
     text-transform: uppercase;
 }
 
@@ -51,11 +51,6 @@ html {
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.link:hover > .social__svg_active,
-.link:focus > .social__svg_active {
-    fill: #ffad9b;
 }
 
 .nav__list {
@@ -322,6 +317,10 @@ html {
     margin-left: 0.8rem;
 }
 
+.link:hover > .social__svg_active,
+.link:focus > .social__svg_active {
+    fill: #ffad9b;
+}
 
 
 
@@ -403,7 +402,8 @@ html {
     .header__mobile-nav {
         display: block;
         background-color: #000;
-        height: 15%;
+        height: max-content;
+	    padding-bottom: 1.8rem;
 
         position: absolute;
         inset: 0 0 0 0;
@@ -424,17 +424,12 @@ html {
         margin: 1.8em 0 0 1.5rem;
     }
 
-    .nav__mobile-link {
-        color: #fff;
-        font-size: 1.5rem;
-        line-height: 1.042em;
-        letter-spacing: 0.08em;
-    }
-
-    .nav__link {
-        /* fix text-decoration not working at resolutions 635px - 683px */
-        vertical-align: middle;
-    }
+            .nav__mobile-link {
+                color: #fff;
+                font-size: 1.5rem;
+                line-height: 1.042em;
+                letter-spacing: 0.08em;
+            }
 
     .footer {
         text-align: center;
