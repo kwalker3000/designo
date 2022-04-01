@@ -36,7 +36,7 @@ finder.on('directory', function (dir, stat, stop) {
 
     var base = path.basename(dir);
     if (base === '.git' || base === 'node_modules') stop()
-    // else console.log(dir + '/')
+    // else console.log(`@import url("${dir}");`)
 });
 
 let i = 0
@@ -45,7 +45,7 @@ finder.on('file', function (file, stat) {
 
     if (file.match(/css$/)) {
       i++
-      console.log(file, i);
+      console.log(`@import url("${file}");`)
     }
     
 });
@@ -61,35 +61,35 @@ finder.on('file', function (file, stat) {
 
 //(?<=class=")[\w\d\W]*(?=")
 
-const allFileContents = fs.readFileSync('index.html', 'utf-8');
-const regex = /(?<=class=")([\w\d\W]+?)\"|\w$/;
-let linesArray = []
-let classes = []
+// const allFileContents = fs.readFileSync('index.html', 'utf-8');
+// const regex = /(?<=class=")([\w\d\W]+?)\"|\w$/;
+// let linesArray = []
+// let classes = []
 
 
-allFileContents.split(/\r?\n/).forEach(line =>  {
-  linesArray.push(line);
-});
+// allFileContents.split(/\r?\n/).forEach(line =>  {
+//   linesArray.push(line);
+// });
 
-for (let line of linesArray) {
-  if (regex.test(line)) {
-    let match = line.match(regex)[1]
-    let classGroup = match === undefined ? undefined : match.split(' ')
-    if (classGroup) {
-      for (let name of classGroup) {
-        if (!(classes.includes(name))) {
-          classes.push(name + ".css")
-        }
-      }
+// for (let line of linesArray) {
+//   if (regex.test(line)) {
+//     let match = line.match(regex)[1]
+//     let classGroup = match === undefined ? undefined : match.split(' ')
+//     if (classGroup) {
+//       for (let name of classGroup) {
+//         if (!(classes.includes(name))) {
+//           classes.push(name + ".css")
+//         }
+//       }
       
-      //console.log(typeof match)
-    }
-  }
+//       //console.log(typeof match)
+//     }
+//   }
   
-}
-console.log(classes)
+// }
+// console.log(classes)
 
 
 
-const used = process.memoryUsage().heapUsed / 1024 / 1024;
-console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`)
+// const used = process.memoryUsage().heapUsed / 1024 / 1024;
+// console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`)

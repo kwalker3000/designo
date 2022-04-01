@@ -1,0 +1,182 @@
+
+
+@import url("../styles/shared/blocks/resets/resets.css");
+
+@import url("../styles/shared/blocks/fonts/heads.css");
+
+@import url("../styles/shared/blocks/fonts/paragraphs.css");
+
+@import url("../styles/shared/blocks/components/button/button.css");
+
+@import url("../styles/shared/blocks/components/nav/nav.css");
+
+@import url("../styles/shared/blocks/components/page/page.css");
+
+@import url("../styles/shared/blocks/components/header/header.css");
+
+@import url("../styles/shared/blocks/components/nav-portfolio/nav-portfolio.css");
+
+@import url("../styles/shared/blocks/components/cta/cta.css");
+
+@import url("../styles/shared/blocks/components/footer/footer.css");
+
+@import url("../styles/shared/blocks/imgs/imgs.css");
+
+@import url("../styles/shared/blocks/imgs/bkg-imgs.css");
+
+@import url("../styles/shared/blocks/utils/utils.css");
+
+
+.main {
+    display: grid;
+    grid-template: repeat(2, auto 8rem) auto 4rem / 1.5rem 1fr 1.5rem;
+
+    grid-template-areas:
+        "hero hero hero"
+        ". . ."
+        ". port ."
+        ". . ."
+        ". ill ."
+        ". . .";
+}
+
+        .main__hero {
+            
+            grid-area: hero;
+        }
+
+        .main__nav-portfolio {
+            grid-area: port;
+        }
+
+        .main__illustrations {
+            grid-area: ill;
+        }
+
+.hero {
+    background-color: #e7816b;
+    color: #fff;
+    height: 843px;
+    min-width: 320px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+        .hero__head {
+            margin: 4.5rem 1.5rem 0;
+            max-width: 475px;
+        }
+        .hero__body {
+            margin: 1.5em 1.5rem 2em;
+            max-width: 475px;
+        }
+
+        .hero__btn {
+            z-index: 1;
+        }
+
+        .hero__img {
+            position: absolute;
+            bottom: -45%;
+        }
+
+.illustrations {
+    color: #333136;
+    text-align: center;
+}
+
+        .illustrations__component {
+            margin-bottom: 4rem;
+        }
+
+                .illustrations__head {
+                    margin: 1.5em 0;
+                }
+
+@media (min-width: 690px) {
+
+    .main {
+        grid-template-columns: 2.5rem 1fr 2.5rem;
+        grid-template-areas:
+            ". hero ."
+            ". . ."
+            ". port ."
+            ". . ."
+            ". ill ."
+            ". . .";
+    }
+
+    .hero {
+        border-radius: 15px;
+    }
+
+    .illustrations {
+        text-align: left;
+    }
+
+            .illustrations__img {
+                float: left;
+                margin-right: 3rem;
+            }
+
+            .illustrations__component {
+                display: inline-block;
+            }
+
+                    .illustrations__head {
+                        margin: 2em 0 1em;
+                    }
+
+}
+
+@media (min-width: 1120px) {
+    
+    .hero {
+        height: 640px;
+        padding-left: 6rem;
+        text-align: left;
+
+        place-items: flex-start;
+        justify-content: center;
+    }
+
+            .hero__head {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            .hero__body {
+                margin: 2.5em 0 3em;
+            }
+            
+            .hero__img {
+                bottom: -39%;
+                right: -6.8%;
+            }
+
+    .illustrations {
+        text-align: center;
+
+        display: flex;
+        justify-content: space-between;
+    }
+            .illustrations__img {
+                float: initial;
+                margin-right: 0;
+            }
+
+            .illustrations__component {
+                width: calc(95% / 3);
+            }
+    
+    .nav-portfolio {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        height: 640px;
+    }  
+}

@@ -1,6 +1,0 @@
-@media (min-width: 1120px) {
-    .card {
-        max-width: 350px;
-        flex-direction: column;
-    }
-}

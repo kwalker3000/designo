@@ -1,0 +1,38 @@
+.img_leaf {
+    display: none;
+}
+
+@media (min-width: 1120px) {
+
+    .img_leaf {
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .leaf-img_hi-top {
+        inset: 18.5rem 0 0 -8rem;
+    }
+
+    .leaf-img_med-top {
+	 inset: 28rem 0% 0 -8rem;
+    }
+
+    .leaf-img_bottom {
+	inset: 111.5rem 0 0 19.55rem;
+        transform: rotate(180deg);
+    }
+
+    .leaf-img_offset-bottom { 
+       inset: 105.5rem 0 0 44rem; 
+    }
+}
+
+@media (min-width: 1445px) {
+
+    // on larger screens, img extends too far
+    .leaf-img_offset-bottom {
+	inset: 105.5rem 0 0 19.55rem;
+	transform: rotate(180deg);
+    }
+}

@@ -1,6 +1,0 @@
-@media (min-width: 690px) {
-    .footer__hr {
-        grid-row: 2 / 3;
-        grid-column: 1 / -1;
-    }
-}

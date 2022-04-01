@@ -1,0 +1,90 @@
+
+
+@import url("./shared/blocks/resets/resets.less");
+
+
+
+///////////
+// fonts //
+///////////
+
+@import url("./shared/blocks/fonts/heads.less");
+
+@import url("./shared/blocks/fonts/paragraphs.less");
+
+
+
+////////////////////////
+// general components //
+////////////////////////
+
+@import url("./shared/blocks/general-components/button/button.less");
+
+@import url("./shared/blocks/general-components/nav/nav.less");
+
+@import url("./shared/blocks/general-components/page/page.less");
+
+@import url("./shared/blocks/general-components/header/header.less");
+
+@import url("./shared/blocks/general-components/cta/cta.less");
+
+@import url("./shared/blocks/general-components/footer/footer.less");
+
+@import url("./shared/blocks/general-components/nav-portfolio/nav-portfolio.less");
+
+
+
+/////////////////////////////////////////////////////////////
+// Shared Assets      *some difference at @desktop size   ///
+/////////////////////////////////////////////////////////////
+
+@import url("./shared/blocks/imgs/imgs.less");
+
+@import url("./shared/blocks/imgs/bkg-imgs.less");
+
+
+
+
+/////////////////
+// Page Styles //
+/////////////////
+
+#home {
+    @import url("./shared/blocks/page-components/home/hero.less");
+    @import url("./shared/blocks/page-components/home/main.less");
+    @import url("./shared/blocks/page-components/home/values.less");
+}
+
+
+
+
+// (web-design, app-design, graphic-design)
+#design {
+    @import url("./shared/blocks/page-components/design/bkg-img_headline.less");
+    @import url("./shared/blocks/page-components/design/card.less");
+    @import url("./shared/blocks/page-components/design/gallery.less");
+    @import url("./shared/blocks/page-components/design/headline.less");
+    @import url("./shared/blocks/page-components/design/main.less");
+
+    // bkg-img
+    @import url("./shared/blocks/page-components/design/modified.less");
+}
+
+
+
+
+#about {
+    @import url("./shared/blocks/page-components/about/card.less");
+    @import url("./shared/blocks/page-components/about/locations.less");
+    @import url("./shared/blocks/page-components/about/main.less");
+    @import url("./shared/blocks/page-components/about/img.less");
+}
+
+
+
+
+///////////
+// Utils //
+///////////
+
+@import url("./shared/blocks/utils/utils.less");

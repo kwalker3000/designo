@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="about">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,15 +11,14 @@
       rel="stylesheet"
     />
 
-    <link href="./about.css" rel="stylesheet" />
-    <link href="./img.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
 
     <script src="../index.js" async></script>
 
     <title>Designo Agency | About</title>
   </head>
   <body class="page">
-    <div class="leaf leaf-bottom"></div>
+ 
     <header class="header page__header extension">
       <img
         class="header__logo logo"
@@ -64,19 +63,19 @@
       <ul id="mobile-navigation" class="nav__list nav__mobile-list">
 
         <li class="nav__item nav__mobile-item">
-          <a class="nav__mobile-link link nav__link_active" href="#">
+          <a class="nav__mobile-link nav__link_active" href="#">
             our company
           </a>
         </li>
 
         <li class="nav__item nav__mobile-item">
-          <a class="nav__mobile-link link nav__link_active" href="#">
+          <a class="nav__mobile-link nav__link_active" href="#">
             locations
           </a>
         </li>
 
         <li class="nav__item nav__mobile-item js-only">
-          <a class="nav__mobile-link link nav__link_active" href="#">
+          <a class="nav__mobile-link nav__link_active" href="#">
             contact
           </a>
         </li>
@@ -87,7 +86,7 @@
 
     <main class="main page__main">
 
-      <section class="main__hero-card hero-card card" data-visible="true">
+      <section class="main__hero-card hero-card card bkg-img bkg-img_about-card" data-visible="true">
         
         <img
           class="hero-card__img img_mobile card__img"
@@ -117,12 +116,12 @@
       </section>
 
       <img
-        class="img_leaf leaf-img_top"
+        class="img_leaf leaf-img_med-top"
         src="../../shared-assets/desktop/bg-pattern-leaf.svg"
         alt=""
       />
 
-      <section class="main__talent-card talent-card card">
+      <section class="main__talent-card talent-card card bkg-img bkg-img_talent-card">
 
         <img
           class="talent-card__img img_mobile card__img"
@@ -210,13 +209,8 @@
         </div>
       </section>
 
-      <!-- <img
-        class="img_leaf leaf-img_bottom"
-        src="../../shared-assets/desktop/bg-pattern-leaf.svg"
-        alt=""
-      /> -->
-
-      <section class="main__real-card real-card card">
+     
+      <section class="main__real-card real-card card bkg-img bkg-img_real-card">
 
         <img
           class="real-card__img img_mobile card__img"
@@ -248,7 +242,7 @@
     </main>
 
     <img
-        class="img_leaf leaf-img_bottom"
+        class="img_leaf leaf-img_offset-bottom"
         src="../../shared-assets/desktop/bg-pattern-leaf.svg"
         alt=""
       />

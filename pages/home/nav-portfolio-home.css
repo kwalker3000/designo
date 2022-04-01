@@ -1,0 +1,58 @@
+        .main__nav-portfolio {
+            grid-area: port;
+        }
+.nav-portfolio {
+    display: grid;
+    /* grid-template-rows: repeat(3, 250px); */
+    grid-gap: 1.5rem;
+}
+
+        .nav-portfolio__content {
+            border-radius: 15px;
+            color: #fff;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+                .nav-portfolio__head {
+                    margin: 0;
+                }
+
+                .link:hover > .nav-portfolio__bkg-img_active,
+                .link:focus > .nav-portfolio__bkg-img_active {
+                    background-blend-mode: soft-light;
+                    background-color: #b15a47;
+                    opacity: 0.75;
+                }
+                /* 690 */
+    .nav-portfolio {
+        grid-template-rows: repeat(3, 200px);
+    }
+
+
+
+
+    /* 1120 */
+    .nav-portfolio {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        height: 640px;
+    }
+
+
+@import url("styles/shared/blocks/resets/resets.css");
+@import url("styles/shared/blocks/fonts/heads.css");
+@import url("styles/shared/blocks/fonts/paragraphs.css");
+@import url("styles/shared/blocks/components/button/button.css");
+@import url("styles/shared/blocks/components/nav/nav.css");
+@import url("styles/shared/blocks/components/page/page.css");
+@import url("styles/shared/blocks/components/header/header.css");
+@import url("styles/shared/blocks/components/nav-portfolio/nav-portfolio.css");
+@import url("styles/shared/blocks/components/cta/cta.css");
+@import url("styles/shared/blocks/components/footer/footer.css");
+@import url("styles/shared/blocks/imgs/imgs.css");
+@import url("styles/shared/blocks/imgs/bkg-imgs.css");
+@import url("styles/shared/blocks/utils/utils.css");

@@ -1,7 +1,0 @@
-@media (min-width: 690px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: auto;
-        grid-gap: 1.9rem;
-    }
-}

@@ -1,9 +1,0 @@
-@media (min-width: 1120px) {
-    .cta {
-        text-align: left;
-
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-}

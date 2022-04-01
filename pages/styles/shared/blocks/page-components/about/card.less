@@ -1,0 +1,99 @@
+
+.card {
+    
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+        .card__img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card__text {
+            padding: 5rem 0;
+        }
+
+            .card__head {
+                margin-top: 0;
+            }
+
+            .card__body {
+                margin: 1.65em 1.5rem 0;
+                max-width: 575px;
+            }
+
+.hero-card {
+    background-color: #e7815b;
+    color: #fff;
+}
+
+.talent-card,
+.real-card {
+    background-color: #FDF3F0;
+    color: #333136;
+}
+
+        .talent-card__head,
+        .real-card__head {
+            color: #E7816B;
+        }
+
+
+@media (min-width: 690px) {
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card__img {
+        border-radius: 15px 15px 0 0;
+    }
+        
+}
+
+@media (min-width: 1120px) {
+
+    .card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+            .card__img {
+                width: auto;
+            }
+
+            .card__text {
+                padding: 5rem 6rem;
+            }
+
+                    .card__body {
+                        margin-left: 0;
+                    }
+
+    .hero-card {
+        height: 480px;
+    }
+
+    .talent-card,
+    .real-card {
+        height: 640px;
+    }
+    
+    .hero-card__img, 
+    .real-card__img{
+        border-radius: 0 15px 15px 0;
+        order: 1;
+    }
+    
+    .talent-card__img {
+        border-radius: 15px 0 0 15px;
+    }
+
+            .talent-card__body {
+                margin-right: 0;
+            }
+}

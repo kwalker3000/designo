@@ -1,0 +1,46 @@
+.main {
+    display: grid;
+    grid-template: repeat(2, auto 8rem) auto 8rem / 1.5rem 1fr 1.5rem;
+
+    grid-template-areas:
+        "head head head"
+        ". . ."
+        ". gal ."
+        ". . ."
+        ". port ."
+        ". . .";
+}
+
+        .main__headline {
+            height: 320px;
+            grid-area: head;
+        }
+
+        .main__gallery {
+            grid-area: gal;
+        }
+
+        .main__nav-portfolio {
+            grid-area: port;
+        }
+
+
+@media (min-width: 690px) {
+
+    .main {
+        grid-template-columns: 2.5rem 1fr 2.5rem;
+        grid-template-areas:
+            ". head ."
+            ". . ."
+            ". gal ."
+            ". . ."
+            ". port ."
+            ". . .";
+    }
+}
+
+@media (min-width: 1120px) {
+    .main {
+        grid-template-rows: repeat(2, auto 11rem) auto 11rem;
+    }
+}

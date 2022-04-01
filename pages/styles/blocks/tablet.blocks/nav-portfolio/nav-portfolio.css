@@ -1,5 +1,0 @@
-@media (min-width: 690px) {
-    .nav-portfolio {
-        grid-template-rows: repeat(3, 200px);
-    }
-}

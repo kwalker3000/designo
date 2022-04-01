@@ -1,0 +1,45 @@
+.main {
+    display: grid;
+    grid-template: repeat(2, auto) 8rem auto 4rem auto 8rem / 1.5rem 1fr 1.5rem;
+
+    grid-template-areas:
+        "hero hero hero"
+        "tal tal tal"
+        ". . ."
+        ". loc ."
+        ". . ."
+        "real real real"
+        ". . .";
+}
+
+        .main__hero-card {
+            grid-area: hero;
+        }
+
+        .main__talent-card {
+            grid-area: tal;
+        }
+
+        .main__locations {
+            grid-area: loc;
+        }
+        
+        .main__real-card {
+            grid-area: real;
+        }
+
+@media (min-width: 690px) {
+
+    .main {
+        grid-template: repeat(2, auto 8rem) auto 4rem auto 8rem / 2.5rem 1fr 2.5rem;
+        grid-template-areas:
+            ". hero ."
+            ". . ."
+            ". tal ."
+            ". . ."
+            ". loc ."
+            ". . ."
+            ". real ."
+            ". . .";
+    }
+}

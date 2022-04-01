@@ -1,5 +1,0 @@
-@media (max-width: 689px) {
-    .header__btn_active[aria-expanded="true"] {
-        background-image: url("../../shared-assets/mobile/icon-close.svg");
-    }
-}

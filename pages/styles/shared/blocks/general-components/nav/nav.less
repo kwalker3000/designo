@@ -1,0 +1,43 @@
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+        .nav__link {
+            font-size: 0.875rem;
+            line-height: 1em;
+            letter-spacing: 0.143em;
+        }
+
+        .nav__link_active:hover,
+        .nav__link_active:focus {
+            text-decoration: underline;
+        }
+
+@media (max-width: 689px) {
+
+    .nav__mobile-item {
+        margin: 2rem 0 0 1.5rem;
+    }
+    
+            .nav__mobile-link {
+                color: #fff;
+                font-size: 1.5rem;
+                line-height: 1.042em;
+                letter-spacing: 0.08em;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+}
+
+@media (min-width: 690px) {
+
+    .nav__item {
+        margin-left: 2em;
+    }
+
+            .nav__list {
+                display: flex;
+            }
+}

@@ -1,6 +1,0 @@
-@media (min-width: 690px) {
-    .footer__logo {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-    }
-}

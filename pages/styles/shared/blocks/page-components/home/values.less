@@ -1,0 +1,56 @@
+.values {
+    color: #333136;
+    text-align: center;
+}
+
+        .values__component {
+            margin-bottom: 4rem;
+        }
+
+                .values__head {
+                    margin: 1.5em 0;
+                }
+
+
+@media (min-width: 12px) {
+
+} 
+
+@media (min-width: 690px) {
+
+    .values {
+        text-align: left;
+    }
+
+            .values__img {
+                float: left;
+                margin-right: 3rem;
+            }
+
+            .values__component {
+                display: inline-block;
+            }
+
+                    .values__head {
+                        margin: 2em 0 1em;
+                    }
+}
+
+@media (min-width: 1120px) {
+
+    .values {
+        text-align: center;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+            .values__img {
+                float: initial;
+                margin-right: 0;
+            }
+
+            .values__component {
+                width: calc(95% / 3);
+            }
+}
