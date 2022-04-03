@@ -1,0 +1,75 @@
+
+.main  {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template: repeat(3, 4fr 5fr 2.5rem) / 1.5rem 1fr 1.5rem;
+    grid-template-areas:
+        "mp1 mp1 mp1"
+        "cd1 cd1 cd1"
+        ". . ."
+        "mp2 mp2 mp2"
+        "cd2 cd2 cd2"
+        ". . ."
+        "mp3 mp3 mp3"
+        "cd3 cd3 cd3"
+        ". . .";
+}
+
+	.main__map-1 {
+	    grid-area: mp1;
+	}
+
+	.main__map-2 {
+	    grid-area: mp2;
+	}
+
+	.main__map-3 {
+	    grid-area: mp3;
+	}
+
+	.main__contact-1 {
+	    grid-area: cd1;
+	}
+
+	.main__contact-2 {
+	    grid-area: cd2;
+	}
+
+	.main__contact-3 {
+	    grid-area: cd3;
+	}
+
+@media (min-width: 690px) {
+
+    .main  {
+        grid-row-gap: 1.5rem;
+        grid-template: repeat(3, 326px 326px 7.5rem) / 2.5rem 1fr 2.5rem;
+        grid-template-areas:
+            ". mp1 ."
+            ". cd1 ."
+            ". . ."
+            ". mp2 ."
+            ". cd2 ."
+            ". . ."
+            ". mp3 ."
+            ". cd3 ."
+            ". . .";
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+    .main  {
+        grid-template: repeat(3, 326px) 10rem / 1rem 1fr 1fr 1fr 1rem;
+        grid-template-areas:
+            ". cd1 cd1 mp1 ."
+            ". mp2 cd2 cd2 ."
+            ". cd3 cd3 mp3 ."
+            ". . . . .";
+        grid-column-gap: 1.5rem;
+	grid-row-gap: 2rem;
+    }
+}

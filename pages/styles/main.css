@@ -58,10 +58,16 @@ html {
   font-size: 0.9375rem;
   line-height: 1.667em;
 }
+.subtitle {
+  font-weight: 700;
+}
 @media (min-width: 690px) {
   .paragraph_sm {
     font-size: 1rem;
     line-height: 1.625em;
+  }
+  .paragraph_bold {
+    font-weight: 700;
   }
 }
 .btn {
@@ -304,6 +310,9 @@ html {
 .footer__hr {
   margin: 1.6rem 0 2rem;
   opacity: 0.1;
+}
+.footer__contact {
+  opacity: 0.5;
 }
 @media (max-width: 689px) {
   .footer {
@@ -751,9 +760,15 @@ html {
 }
 #about .card__text {
   padding: 5rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #about .card__head {
-  margin-top: 0;
+  margin: 0;
 }
 #about .card__body {
   margin: 1.65em 1.5rem 0;
@@ -789,10 +804,11 @@ html {
     width: auto;
   }
   #about .card__text {
-    padding: 5rem 6rem;
+    padding: 0 4rem 0 6rem;
+    align-items: start;
   }
   #about .card__body {
-    margin-left: 0;
+    margin: 1.65em 0;
   }
   #about .hero-card {
     height: 480px;
@@ -882,39 +898,124 @@ html {
 }
 #about .bkg-img_about-card {
   background-image: url("/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/about/assets/mobile/bg-pattern-hero-about-mobile.svg");
-  background-position: 99.5% -80%;
+  background-position: -31rem -8.5rem;
 }
 @media (min-width: 690px) {
   #about .bkg-img_about-card {
     background-image: url("/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/pages/about/assets/desktop/bg-pattern-hero-about-desktop.svg");
-    background-position: -269% -275%;
+    background-position: -9rem -24rem;
   }
 }
 @media (min-width: 1120px) {
   #about .bkg-img_about-card {
-    background-position: 0% 100%;
+    background-position: bottom;
   }
 }
 #about .bkg-img_talent-card,
 #about .bkg-img_real-card {
   background-image: url("/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/shared-assets/desktop/bg-pattern-three-circles.svg");
-  background-position: 0% 112%;
 }
 @media (min-width: 690px) {
   #about .bkg-img_talent-card,
   #about .bkg-img_real-card {
-    background-position: 50% 75%;
+    background-position: 6rem -11rem;
   }
 }
 @media (min-width: 1120px) {
   #about .bkg-img_talent-card {
-    background-position: 65% 100%;
+    background-position: -9rem bottom;
   }
 }
 @media (min-width: 1120px) {
   #about .bkg-img_real-card {
     background-image: url("/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/shared-assets/desktop/bg-pattern-two-circles.svg");
-    background-position: -3rem 21.7rem;
+    background-position: 1rem bottom;
+  }
+}
+#locations .main {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template: repeat(3, 4fr 5fr 2.5rem) / 1.5rem 1fr 1.5rem;
+  grid-template-areas: "mp1 mp1 mp1" "cd1 cd1 cd1" ". . ." "mp2 mp2 mp2" "cd2 cd2 cd2" ". . ." "mp3 mp3 mp3" "cd3 cd3 cd3" ". . .";
+}
+#locations .main__map-1 {
+  grid-area: mp1;
+}
+#locations .main__map-2 {
+  grid-area: mp2;
+}
+#locations .main__map-3 {
+  grid-area: mp3;
+}
+#locations .main__contact-1 {
+  grid-area: cd1;
+}
+#locations .main__contact-2 {
+  grid-area: cd2;
+}
+#locations .main__contact-3 {
+  grid-area: cd3;
+}
+@media (min-width: 690px) {
+  #locations .main {
+    grid-row-gap: 1.5rem;
+    grid-template: repeat(3, 326px 326px 7.5rem) / 2.5rem 1fr 2.5rem;
+    grid-template-areas: ". mp1 ." ". cd1 ." ". . ." ". mp2 ." ". cd2 ." ". . ." ". mp3 ." ". cd3 ." ". . .";
+  }
+}
+@media (min-width: 1120px) {
+  #locations .main {
+    grid-template: repeat(3, 326px) 10rem / 1rem 1fr 1fr 1fr 1rem;
+    grid-template-areas: ". cd1 cd1 mp1 ." ". mp2 cd2 cd2 ." ". cd3 cd3 mp3 ." ". . . . .";
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+  }
+}
+#locations .contact__head {
+  align-self: end;
+}
+#locations .contact {
+  background-color: #fdf3f0;
+  padding: 5rem 0;
+  text-align: center;
+}
+#locations .contact__head {
+  color: #e7816b;
+  margin: 0;
+}
+#locations .contact__body {
+  color: #333136;
+  margin: 1.5em 0 0;
+}
+@media (min-width: 690px) {
+  #locations .map,
+  #locations .contact {
+    border-radius: 15px;
+  }
+  #locations .contact {
+    display: grid;
+    grid-template-columns: 3fr 10% 3fr;
+    text-align: left;
+    padding: 5rem 6rem;
+  }
+  #locations .contact__head {
+    grid-column: 1 / -1;
+  }
+  #locations .contact__body-col1 {
+    grid-column: 1 / 3;
+  }
+  #locations .contact__body-col2 {
+    grid-column: 3 / 4;
+  }
+}
+#locations .bkg-img_contact {
+  background-image: url("/home/kwalker/STEM/Dev/Projects/designo/designo-multi-page-website/designo/shared-assets/desktop/bg-pattern-three-circles.svg");
+  background-position: inherit;
+}
+@media (min-width: 690px) {
+  #locations .bkg-img_contact {
+    background-position: left bottom;
   }
 }
 .logo {
@@ -924,13 +1025,6 @@ html {
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
-}
-.contact__title {
-  font-weight: 700;
-}
-.contact__body {
-  line-height: 1.625em;
-  opacity: 0.5;
 }
 .social__svg {
   fill: #e7816b;
@@ -944,11 +1038,6 @@ html {
 .link:hover > .social__svg_active,
 .link:focus > .social__svg_active {
   fill: #ffad9b;
-}
-@media (min-width: 690px) {
-  .contact__body_bold {
-    font-weight: 700;
-  }
 }
 .extension {
   padding-left: 100vw;

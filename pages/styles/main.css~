@@ -924,10 +924,10 @@ html {
   text-transform: uppercase;
   text-decoration: none;
 }
-.contact__title {
+.subtitle {
   font-weight: 700;
 }
-.contact__body {
+.paragraph {
   line-height: 1.625em;
   opacity: 0.5;
 }
@@ -945,7 +945,7 @@ html {
   fill: #ffad9b;
 }
 @media (min-width: 690px) {
-  .contact__body_bold {
+  .paragraph_bold {
     font-weight: 700;
   }
 }

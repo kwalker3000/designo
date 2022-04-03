@@ -15,21 +15,23 @@
         zoom: zoomLevel
     };
 
-    const map1 = L.map('map_1', location1);
-    const map2 = L.map('map_2', location2);
-    const map3 = L.map('map_3', location3);
+    const map1 = L.map('map-1', location1);
+    const map2 = L.map('map-2', location2);
+    const map3 = L.map('map-3', location3);
 
-    let maps = [map1, map2, map3]
-    
+    let maps = [map1, map2, map3];
+   
+
+    // accessToken is a public token
     const options = {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
         id: 'mapbox/streets-v11',
         tileSize: 512,
         zoomOffset: -1,
-        accessToken: 'pk.eyJ1Ijoia2V2aW53NDE1IiwiYSI6ImNsMG1xbDUyZDB4ZDgza28zanU5d2F6cW8ifQ.5qUhExqcxtxwJf3qdDASew'
-    }
+        accessToken: 'pk.eyJ1Ijoia2V2aW53NDE1IiwiYSI6ImNsMG1xYWN0ZTBzaTkzY28wZDlyeXI2bHYifQ.hENzc0aGhOERlu57XQE9QA'
+    };
     
-    maps.forEach(map => L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', options).addTo(map))
+    maps.forEach(map => L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', options).addTo(map));
 
-})()
+})();
