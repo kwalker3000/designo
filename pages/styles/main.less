@@ -4,41 +4,33 @@
 
 
 ///////////
-// fonts //
+// Fonts //
 ///////////
 
 @import url("./shared/blocks/fonts/heads.less");
-
 @import url("./shared/blocks/fonts/paragraphs.less");
 
 
 
 ////////////////////////
-// general components //
+// General Components //
 ////////////////////////
 
 @import url("./shared/blocks/general-components/button/button.less");
-
 @import url("./shared/blocks/general-components/nav/nav.less");
-
 @import url("./shared/blocks/general-components/page/page.less");
-
 @import url("./shared/blocks/general-components/header/header.less");
-
 @import url("./shared/blocks/general-components/cta/cta.less");
-
 @import url("./shared/blocks/general-components/footer/footer.less");
 
-@import url("./shared/blocks/general-components/nav-portfolio/nav-portfolio.less");
 
 
 
-/////////////////////////////////////////////////////////////
-// Shared Assets      *some difference at @desktop size   ///
-/////////////////////////////////////////////////////////////
+////////////////////
+// Shared Assets ///
+////////////////////
 
-@import url("./shared/blocks/imgs/img.less");
-
+@import url("./shared/blocks/imgs/img_leaf.less");
 @import url("./shared/blocks/imgs/bkg-img.less");
 
 
@@ -48,12 +40,25 @@
 // Page Styles //
 /////////////////
 
+
+
+#home,
+#design {
+    @import url("./shared/blocks/general-components/nav-portfolio/nav-portfolio.less");    
+}
+
+#contact,
+#about {
+    @import url("./shared/blocks/page-components/about/locations.less");
+}
+
+
+
 #home {
     @import url("./shared/blocks/page-components/home/hero.less");
     @import url("./shared/blocks/page-components/home/main.less");
     @import url("./shared/blocks/page-components/home/values.less");
 }
-
 
 
 
@@ -66,20 +71,17 @@
     @import url("./shared/blocks/page-components/design/main.less");
 
     // bkg-img
-    @import url("./shared/blocks/page-components/design/modified.less");
+    @import url("./shared/blocks/page-components/design/modifiers.less");
 }
-
 
 
 
 #about {
     @import url("./shared/blocks/page-components/about/card.less");
-    @import url("./shared/blocks/page-components/about/locations.less");
     @import url("./shared/blocks/page-components/about/main.less");
     @import url("./shared/blocks/page-components/about/imgs/img.less");
     @import url("./shared/blocks/page-components/about/imgs/bkg-img.less");
 }
-
 
 
 
@@ -88,6 +90,20 @@
     @import url("./shared/blocks/page-components/locations/contact.less");
     @import url("./shared/blocks/page-components/locations/bkg-img.less");
 }
+
+
+
+#contact {
+    @import url("./shared/blocks/page-components/contact/main.less");
+    @import url("./shared/blocks/page-components/contact/contact-form.less");
+    @import url("./shared/blocks/page-components/contact/form.less");
+    @import url("./shared/blocks/page-components/contact/field.less");
+    @import url("./shared/blocks/page-components/contact/input.less");
+    @import url("./shared/blocks/page-components/contact/modifiers.less");
+}
+
+
+
 ///////////
 // Utils //
 ///////////

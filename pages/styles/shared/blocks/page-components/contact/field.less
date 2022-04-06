@@ -1,0 +1,42 @@
+
+.field {
+    position: relative;
+}
+
+.field_phone[data-has-error="false"],
+.field_message[data-has-error="false"],
+.field_email[data-has-error="false"],
+.field_name[data-has-error="false"] {
+
+	.error {
+	    display: none;
+	}
+   
+}
+
+.field_message[data-has-error="true"],
+.field_email[data-has-error="true"],
+.field_name[data-has-error="true"] {
+
+	// position: relative;
+    .field__error {
+	position: absolute;
+	right: 0.5rem;
+	top: 0.75rem;
+    }
+
+    .error {
+	display: flex;
+	align-items: center;
+    }
+    
+	    .error__text {
+		font-size: 0.75rem;
+		font-style: italic;
+		line-height: 2.167em;
+	    }
+
+	    .error__icon {
+		margin-left: 0.5rem;
+	    }
+}

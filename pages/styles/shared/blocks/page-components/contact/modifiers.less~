@@ -1,0 +1,14 @@
+
+.btn_submit {
+    padding: 1.44em 3.34em;
+}
+
+.page_contact {
+    grid-template: repeat(2, auto) auto / 1.5rem 1fr 1.5rem;
+}
+
+.footer_contact {
+    padding-top: 4rem;
+    margin-top: 0;
+}
+

@@ -5,3 +5,18 @@ html {
     padding: 0;
     margin: 0;
 }
+
+// chrome auto-fill
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus, {
+    border: 1px solid #2f2736;
+    font-style: italic;
+    -webkit-text-fill-color: #2f2736;
+  //  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

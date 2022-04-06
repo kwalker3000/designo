@@ -21,7 +21,7 @@ function handleMenuToggle(e) {
         headerBtn.setAttribute('aria-expanded', true);
         overlay.setAttribute('data-visible', true);
 
-        main.style.zIndex = -3;
+        main.style.zIndex = "-3";
         document.body.style.overflow = 'hidden';
 
         blockTab.addEventListener('keydown', handleTabEvent);
@@ -32,7 +32,7 @@ function handleMenuToggle(e) {
         headerBtn.setAttribute('aria-expanded', false);
         overlay.setAttribute('data-visible', false);
 
-        main.style.zIndex = 0;
+        main.style.zIndex = "0";
         document.body.style.overflow = '';
 
         blockTab.removeEventListener('keydown', handleTabEvent);

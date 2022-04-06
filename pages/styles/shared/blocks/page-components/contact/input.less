@@ -1,0 +1,32 @@
+
+@import (reference) "../../fonts/paragraphs.less";
+
+.input {
+    background-color: transparent;
+    color: #FFF;
+
+    border: none;
+    border-bottom: 1px solid #FFF;
+    margin-top: 1.5rem;
+    padding-bottom: 0.8rem;
+    width: 100%;
+
+    resize: none;
+}
+
+.input-text {
+    .paragraph_sm();
+}
+
+
+.input:not(:placeholder-shown) {
+    border-bottom: 3px solid #FFF !important;
+}
+
+::placeholder {
+    color: #FFF;
+    opacity:  0.5;
+}
+
+
+//    background-color: #2f2736;

@@ -1,5 +1,4 @@
 
-
 @import url("./shared/blocks/resets/resets.less");
 
 
@@ -38,9 +37,9 @@
 // Shared Assets      *some difference at @desktop size   ///
 /////////////////////////////////////////////////////////////
 
-@import url("./shared/blocks/imgs/imgs.less");
+@import url("./shared/blocks/imgs/img.less");
 
-@import url("./shared/blocks/imgs/bkg-imgs.less");
+@import url("./shared/blocks/imgs/bkg-img.less");
 
 
 
@@ -58,6 +57,13 @@
 
 
 
+#contact,
+#about {
+    @import url("./shared/blocks/page-components/about/locations.less");
+}
+
+
+
 // (web-design, app-design, graphic-design)
 #design {
     @import url("./shared/blocks/page-components/design/bkg-img_headline.less");
@@ -67,7 +73,7 @@
     @import url("./shared/blocks/page-components/design/main.less");
 
     // bkg-img
-    @import url("./shared/blocks/page-components/design/modified.less");
+    @import url("./shared/blocks/page-components/design/modifiers.less");
 }
 
 
@@ -75,14 +81,31 @@
 
 #about {
     @import url("./shared/blocks/page-components/about/card.less");
-    @import url("./shared/blocks/page-components/about/locations.less");
     @import url("./shared/blocks/page-components/about/main.less");
-    @import url("./shared/blocks/page-components/about/img.less");
+    @import url("./shared/blocks/page-components/about/imgs/img.less");
+    @import url("./shared/blocks/page-components/about/imgs/bkg-img.less");
 }
 
 
 
 
+#locations {
+    @import url("./shared/blocks/page-components/locations/main.less");
+    @import url("./shared/blocks/page-components/locations/contact.less");
+    @import url("./shared/blocks/page-components/locations/bkg-img.less");
+}
+
+
+
+
+#contact {
+    @import url("./shared/blocks/page-components/contact/main.less");
+    @import url("./shared/blocks/page-components/contact/contact-form.less");
+    @import url("./shared/blocks/page-components/contact/form.less");
+    @import url("./shared/blocks/page-components/contact/field.less");
+    @import url("./shared/blocks/page-components/contact/input.less");
+    @import url("./shared/blocks/page-components/contact/modifiers.less");
+}
 ///////////
 // Utils //
 ///////////
