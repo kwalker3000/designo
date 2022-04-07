@@ -1,7 +1,0 @@
-@import url("./bkg-img_app-headline.less");
-
-@import url("./bkg-img_graph-headline.less");
-
-@import url("./bkg-img_web-headline.less");
-
-@import url("./nav-portfolio_design.less")
