@@ -41,7 +41,7 @@
       </button>
 
       <nav class="nav header__nav">
-        <ul id="mobile-navigation" class="nav__list">
+        <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link link nav__link_active" href="../about/about.html">
               our company
@@ -106,12 +106,13 @@
 
         <form
 	  class="form contact-form__form"
-	  method="get">
+	  method="get"
+	  novalidate>
 
 	  <div class="field form__field field_name" data-has-error="false">
 	    <div class="error field__error">
-		<p class="error__text">Can't be empty</p>
-		<img src="./assets/desktop/icon-error.svg" class="icon error__icon">
+		<p class="error__text error__text_name"></p>
+		<img src="./assets/desktop/icon-error.svg" class="icon error__icon" alt="">
 	    </div>
 	    <input
 		name="name"
@@ -123,8 +124,8 @@
           
 	  <div class="field form__field field_email" data-has-error="false">
 	    <div class="error field__error">
-		<p class="error__text">Can't be empty</p>
-		<img src="./assets/desktop/icon-error.svg" class="icon error__icon">
+		<p class="error__text error__text_email"></p>
+		<img src="./assets/desktop/icon-error.svg" class="icon error__icon" alt="">
 	    </div>
 	    <input
 		name="email"
@@ -134,10 +135,10 @@
 		/>
 	  </div>
 
-	  <div class="field form__field field_phone" data-has-error="false">
+	  <div class="field form__field field_phone">
 	    <div class="error field__error">
-		<p class="error__text">Can't be empty</p>
-		<img src="./assets/desktop/icon-error.svg" class="icon error__icon">
+		<p class="error__text"></p>
+		<img src="./assets/desktop/icon-error.svg" class="icon error__icon" alt="">
 	    </div>
 	    <input
 		name="phone"
@@ -146,23 +147,23 @@
 		placeholder="  Phone"/>
 	  </div>
 
-	  <div class="field form__field field_message" data-has-error="false">
+	  <div class="field form__field field_msg" data-has-error="false">
 	    <div class="error field__error">
-		<p class="error__text">Can't be empty</p>
-		<img src="./assets/desktop/icon-error.svg" class="icon error__icon">
+		<p class="error__text error__text_msg"></p>
+		<img src="./assets/desktop/icon-error.svg" class="icon error__icon" alt="">
 	    </div>
 	    <textarea
 		rows="4"
-		name="message"
+		name="msg"
 		class="text-area form__text-area input input-text"
 		placeholder=" Your Message"></textarea>
 	  </div>
 
 	  <button
 	    class="btn form__btn btn_active btn_light-theme btn_light-theme_active btn_submit">
-	    <spam class="btn__text">
+	    <span class="btn__text">
 	      Submit
-	    </spam>
+	    </span>
 	  </button>
 
 	</form>
@@ -175,57 +176,57 @@
           <img
             class="locations__img bkg-img bkg-img_circle-down"
             src="../../shared-assets/desktop/illustration-canada.svg"
-            alt="illustration of a happy person working at their desk with a tablet and a beverage"
+            alt="illustration of downtown Toronto"
           />
 
           <h2 class="locations__head head_level-2_short">
             canada
           </h2>
-          <button
-            class="locations__btn btn btn_active btn_dark-theme btn_dark-theme_active"
-          >
-          <a href="../locations/locations.html#map-1" class="btn__text link">
-            see location
-          </a>
-          </button>
+          <a
+	    href="../locations/locations.html#map-1"
+	    class="locations__btn btn btn_active btn_dark-theme btn_dark-theme_active">
+	    <span class="btn__text">
+	      see location
+	    </span>
+	  </a>
         </div>
 
         <div class="locations__component">
           <img
             class="locations__img bkg-img bkg-img_circle"
             src="../../shared-assets/desktop/illustration-australia.svg"
-            alt="illustration of a happy person working at their desk with a tablet and a beverage"
+            alt="illustration of Sydney Opera House"
           />
 
           <h2 class="locations__head head_level-2_short">
             australia
           </h2>
-          <button
-            class="locations__btn btn btn_active btn_dark-theme btn_dark-theme_active"
-          >
-          <a href="../locations/locations.html#map-2" class="btn__text link">
-            see location
-          </a>
-          </button>
+          <a
+	    href="../locations/locations.html#map-2"
+	    class="locations__btn btn btn_active btn_dark-theme btn_dark-theme_active">
+	    <span class="btn__text">
+	      see location
+	    </span>
+	  </a>
         </div>
 
         <div class="locations__component">
           <img
             class="locations__img bkg-img bkg-img_circle-up"
             src="../../shared-assets/desktop/illustration-united-kingdom.svg"
-            alt="illustration of happy people working together"
+            alt="illustration of London's Tower Bridge'"
           />
 
           <h2 class="locations__head head_level-2_short">
             united kingdom
           </h2>
-          <button
-            class="locations__btn btn btn_active btn_dark-theme btn_dark-theme_active"
-          >
-          <a href="../locations/locations.html#map-3" class="btn__text link">
-            see location
-          </a>
-          </button>
+          <a
+	    href="../locations/locations.html#map-3"
+	    class="locations__btn btn btn_active btn_dark-theme btn_dark-theme_active">
+	    <span class="btn__text">
+	      see location
+	    </span>
+	  </a>
         </div>
       </section>
 
