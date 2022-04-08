@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://frontendmentor.io)
-- Live Site URL: [Designo](https://)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-multi-page-site-using-bem-less-css-grid-and-more-rkMJFRamc)
+- Live Site URL: [Designo](https://kwalker3000.github.io/designo/pages/home/home.html)
 
 ### My process
 
